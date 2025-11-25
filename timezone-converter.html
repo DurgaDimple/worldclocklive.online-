@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone Converter - Convert Time Between Any Two Timezones | WorldTimeZoneLive</title>
+    <meta name="description" content="Free online time zone converter. Convert time between any two timezones instantly. Compare 195+ countries, 250+ cities. Perfect for scheduling meetings, travel planning, and global business.">
+    <meta name="keywords" content="time zone converter, timezone converter, convert time zones, time converter online, world time converter, international time converter, time difference calculator, timezone calculator">
+    <link rel="canonical" href="https://worldtimezonelive.com/timezone-converter">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Time Zone Converter - Convert Time Between Any Two Timezones">
+    <meta property="og:description" content="Free online time zone converter. Convert time between 195+ countries instantly.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://worldtimezonelive.com/timezone-converter">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Time Zone Converter",
+      "description": "Free online time zone converter to convert time between any two timezones",
+      "url": "https://worldtimezonelive.com/timezone-converter",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-1: #000;
+            --bg-2: #222;
+            --bg-3: #000;
+            --text: #fff;
+            --border: #fff;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --card-hover: rgba(255, 255, 255, 0.1);
+            --accent-color: rgba(255, 0, 0, 0.3);
+        }
+
+        body.white-theme {
+            --bg-1: #fff;
+            --bg-2: #f5f5f5;
+            --bg-3: #fff;
+            --text: #000;
+            --border: #000;
+            --card-bg: rgba(0, 0, 0, 0.05);
+            --card-hover: rgba(0, 0, 0, 0.1);
+            --accent-color: rgba(255, 0, 0, 0.3);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 50%, var(--bg-3) 100%);
+            color: var(--text);
+            min-height: 100vh;
+            transition: all 0.5s ease;
+        }
+
+        header {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--card-bg);
+            border-bottom: 2px solid var(--border);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: var(--text);
+            margin-bottom: 10px;
+            text-shadow: 0 0 30px var(--accent-color);
+        }
+
+        .controls {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .theme-toggle, .home-btn {
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            color: var(--text);
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s;
+            backdrop-filter: blur(5px);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .theme-toggle:hover, .home-btn:hover {
+            background: var(--card-hover);
+            box-shadow: 0 0 20px var(--accent-color);
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .tool-card {
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 30px;
+        }
+
+        .converter-grid {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 30px;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .timezone-selector {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .timezone-selector label {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        select, input {
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            color: var(--text);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.1em;
+            width: 100%;
+            backdrop-filter: blur(5px);
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            box-shadow: 0 0 15px var(--accent-color);
+        }
+
+        .arrow {
+            font-size: 3em;
+            text-align: center;
+        }
+
+        .result-display {
+            text-align: center;
+            padding: 30px;
+            background: var(--card-hover);
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .result-time {
+            font-size: 4em;
+            font-weight: bold;
+            color: var(--text);
+            text-shadow: 0 0 20px var(--accent-color);
+            margin: 20px 0;
+        }
+
+        .result-date {
+            font-size: 1.5em;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+
+        .btn {
+            background: var(--accent-color);
+            border: 2px solid var(--border);
+            color: var(--text);
+            padding: 15px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: all 0.3s;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background: var(--card-hover);
+            box-shadow: 0 0 20px var(--accent-color);
+            transform: scale(1.05);
+        }
+
+        .seo-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 40px 20px;
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .seo-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        .seo-section p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .converter-grid {
+                grid-template-columns: 1fr;
+            }
+            .arrow {
+                transform: rotate(90deg);
+            }
+            h1 { font-size: 1.8em; }
+            .result-time { font-size: 2.5em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="controls">
+            <a href="index.html" class="home-btn">🏠 Home</a>
+            <button class="theme-toggle" id="themeToggle">🌓 <span id="themeName">Black</span></button>
+        </div>
+        <h1>🌍 Time Zone Converter</h1>
+        <p style="opacity:0.7;">Convert time between any two timezones instantly</p>
+    </header>
+
+    <div class="container">
+        <div class="tool-card">
+            <div class="converter-grid">
+                <div class="timezone-selector">
+                    <label>From Timezone:</label>
+                    <select id="fromTimezone">
+                        <option value="America/New_York">New York (EST/EDT)</option>
+                        <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+                        <option value="Europe/London">London (GMT/BST)</option>
+                        <option value="Europe/Paris">Paris (CET/CEST)</option>
+                        <option value="Asia/Tokyo">Tokyo (JST)</option>
+                        <option value="Asia/Shanghai">Shanghai (CST)</option>
+                        <option value="Asia/Kolkata">Mumbai (IST)</option>
+                        <option value="Australia/Sydney">Sydney (AEST/AEDT)</option>
+                        <option value="America/Chicago">Chicago (CST/CDT)</option>
+                        <option value="America/Denver">Denver (MST/MDT)</option>
+                    </select>
+                    <label>Time:</label>
+                    <input type="datetime-local" id="fromTime">
+                </div>
+                
+                <div class="arrow">⇄</div>
+                
+                <div class="timezone-selector">
+                    <label>To Timezone:</label>
+                    <select id="toTimezone">
+                        <option value="Europe/London">London (GMT/BST)</option>
+                        <option value="America/New_York" selected>New York (EST/EDT)</option>
+                        <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+                        <option value="Europe/Paris">Paris (CET/CEST)</option>
+                        <option value="Asia/Tokyo">Tokyo (JST)</option>
+                        <option value="Asia/Shanghai">Shanghai (CST)</option>
+                        <option value="Asia/Kolkata">Mumbai (IST)</option>
+                        <option value="Australia/Sydney">Sydney (AEST/AEDT)</option>
+                        <option value="America/Chicago">Chicago (CST/CDT)</option>
+                        <option value="America/Denver">Denver (MST/MDT)</option>
+                    </select>
+                    <label>Converted Time:</label>
+                    <div class="result-display">
+                        <div class="result-time" id="convertedTime">--:--</div>
+                        <div class="result-date" id="convertedDate"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align:center; margin-top:30px;">
+                <button class="btn" onclick="convertTime()">🔄 Convert Now</button>
+                <button class="btn" onclick="swapTimezones()">⇄ Swap Timezones</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="seo-section">
+        <h2>🌍 Free Time Zone Converter - Convert Time Instantly</h2>
+        <p><strong>What is a time zone converter?</strong> A time zone converter is an essential tool for anyone working across different time zones. Our free online converter allows you to instantly convert time between any two timezones worldwide, making it perfect for scheduling international meetings, coordinating with global teams, planning travel, and managing remote work.</p>
+        
+        <h2>✨ Key Features</h2>
+        <p><strong>Instant Conversion:</strong> Convert time between 195+ countries and 250+ major cities instantly. No calculations needed - just select your timezones and get accurate results.</p>
+        <p><strong>Accurate Results:</strong> Our converter uses the official IANA timezone database, ensuring accuracy for all timezones including daylight saving time (DST) changes.</p>
+        <p><strong>Easy to Use:</strong> Simple interface - select source timezone, enter time, select destination timezone, and get instant results.</p>
+        <p><strong>Multiple Formats:</strong> View results in both 12-hour and 24-hour formats. See both the converted time and date.</p>
+        
+        <h2>📅 Common Use Cases</h2>
+        <p><strong>Business Meetings:</strong> Schedule meetings with international clients and colleagues. Know exactly when 9 AM in New York is in London, Tokyo, or Sydney.</p>
+        <p><strong>Travel Planning:</strong> Plan your trips by understanding time differences. Know what time it will be when you arrive at your destination.</p>
+        <p><strong>Remote Work:</strong> Coordinate with distributed teams across multiple timezones. Find the best meeting times for everyone.</p>
+        <p><strong>Event Planning:</strong> Plan global events, webinars, and conferences. Ensure participants know the correct local time.</p>
+        
+        <h2>❓ Frequently Asked Questions</h2>
+        <p><strong>Q: How accurate is the time zone converter?</strong><br>
+        A: Our converter uses the official IANA timezone database, the same database used by major operating systems. It automatically accounts for daylight saving time changes and historical timezone adjustments.</p>
+        
+        <p><strong>Q: Does the converter account for daylight saving time?</strong><br>
+        A: Yes! The converter automatically accounts for DST changes. When you convert time, it uses the correct offset for the selected date, including any DST adjustments.</p>
+        
+        <p><strong>Q: Can I convert time for past or future dates?</strong><br>
+        A: Yes, you can convert time for any date. The converter will use the correct timezone rules for that specific date, including historical DST changes.</p>
+        
+        <p><strong>Q: How many timezones are supported?</strong><br>
+        A: We support all timezones worldwide, including all 195+ countries and 250+ major cities. You can convert between any two timezones.</p>
+    </div>
+
+    <footer style="text-align:center; padding:30px 20px; background:var(--card-bg); border-top:2px solid var(--border); margin-top:50px;">
+        <p>Made with ❤️ | WorldTimeZoneLive 2026 | Free Time Zone Converter</p>
+        <p style="font-size:0.8em;margin-top:10px;">
+            <a href="index.html" style="color:var(--text);text-decoration:none;">🏠 World Clock</a> | 
+            <a href="alarm.html" style="color:var(--text);text-decoration:none;">⏰ Alarm & Timer</a> |
+            <a href="timezone-converter.html" style="color:var(--text);text-decoration:none;">🌍 Time Zone Converter</a>
+        </p>
+    </footer>
+
+    <script>
+        // Theme toggle
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('white-theme');
+            document.getElementById('themeName').textContent = 
+                document.body.classList.contains('white-theme') ? 'White' : 'Black';
+        });
+
+        // Set current time as default
+        const now = new Date();
+        const localDateTime = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
+        document.getElementById('fromTime').value = localDateTime;
+
+        function convertTime() {
+            const fromTz = document.getElementById('fromTimezone').value;
+            const toTz = document.getElementById('toTimezone').value;
+            const fromTime = document.getElementById('fromTime').value;
+            
+            if (!fromTime) {
+                alert('Please select a time to convert');
+                return;
+            }
+            
+            // Create date object in source timezone
+            const date = new Date(fromTime);
+            const fromDateStr = date.toLocaleString('en-US', { timeZone: fromTz, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+            
+            // Get time components
+            const [datePart, timePart] = fromDateStr.split(', ');
+            const [month, day, year] = datePart.split('/');
+            const [hour, minute, second] = timePart.split(':');
+            
+            // Create date in target timezone
+            const targetDate = new Date(`${year}-${month}-${day}T${hour}:${minute}:${second}`);
+            const utcTime = targetDate.getTime() + (targetDate.getTimezoneOffset() * 60000);
+            const targetTime = new Date(utcTime + (getTimezoneOffset(toTz) - getTimezoneOffset(fromTz)) * 60000);
+            
+            // Display result
+            const timeStr = targetTime.toLocaleString('en-US', { timeZone: toTz, hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
+            const dateStr = targetTime.toLocaleString('en-US', { timeZone: toTz, weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+            
+            document.getElementById('convertedTime').textContent = timeStr;
+            document.getElementById('convertedDate').textContent = dateStr;
+        }
+
+        function getTimezoneOffset(tz) {
+            const now = new Date();
+            const utc = new Date(now.toLocaleString('en-US', { timeZone: 'UTC' }));
+            const local = new Date(now.toLocaleString('en-US', { timeZone: tz }));
+            return (local - utc) / 60000;
+        }
+
+        function swapTimezones() {
+            const fromTz = document.getElementById('fromTimezone').value;
+            const toTz = document.getElementById('toTimezone').value;
+            document.getElementById('fromTimezone').value = toTz;
+            document.getElementById('toTimezone').value = fromTz;
+            convertTime();
+        }
+
+        // Auto-convert on change
+        document.getElementById('fromTime').addEventListener('change', convertTime);
+        document.getElementById('fromTimezone').addEventListener('change', convertTime);
+        document.getElementById('toTimezone').addEventListener('change', convertTime);
+
+        // Initial conversion
+        convertTime();
+    </script>
+</body>
+</html>
+

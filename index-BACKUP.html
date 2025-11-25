@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="bSRe5AaVhUWvz9lKL22MQRR_2FeL5UvDMbqQeSDA8G8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldTimeZoneLive - 195+ Countries & 250+ Cities Live Clock</title>
+    <meta name="description"
+        content="Complete world clock covering all 195 countries and 250+ major cities. Real-time display with country flags, 12hr/24hr format, SEO blog articles, FAQs. Share direct links to any city time.">
+    <meta name="keywords"
+        content="world clock, time zones, live clock, international time, city time, timezone converter">
+    <link rel="canonical" href="https://worldtimezonelive.com/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-1: #000;
+            --bg-2: #222;
+            --bg-3: #000;
+            --text: #fff;
+            --border: #fff;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --card-hover: rgba(255, 255, 255, 0.1);
+            --accent-color: rgba(255, 0, 0, 0.3);
+            --particle-symbol: '❤';
+            --particle-color: rgba(255, 0, 0, 0.3);
+            --theme-name: 'Black Theme';
+        }
+
+        body.white-theme {
+            --bg-1: #fff;
+            --bg-2: #f5f5f5;
+            --bg-3: #fff;
+            --text: #000;
+            --border: #000;
+            --card-bg: rgba(0, 0, 0, 0.05);
+            --card-hover: rgba(0, 0, 0, 0.1);
+            --accent-color: rgba(255, 0, 0, 0.3);
+            --particle-symbol: '❤';
+            --particle-color: rgba(255, 0, 0, 0.3);
+            --theme-name: 'White Theme';
+        }
+
+        /* Frozen Movie Theme - Icy blues with snowflakes */
+        body.frozen-theme {
+            --bg-1: #0a1628;
+            --bg-2: #1e3a5f;
+            --bg-3: #2d5f8d;
+            --text: #e8f4f8;
+            --border: #5dc1d8;
+            --card-bg: rgba(93, 193, 216, 0.1);
+            --card-hover: rgba(93, 193, 216, 0.25);
+            --accent-color: rgba(93, 193, 216, 0.5);
+            --particle-symbol: '❄';
+            --particle-color: rgba(255, 255, 255, 0.8);
+            --theme-name: 'Frozen Theme';
+            background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 50%, #2d5f8d 100%) !important;
+        }
+
+        body.frozen-theme h1 {
+            text-shadow: 0 0 30px rgba(93, 193, 216, 0.6);
+        }
+
+        body.frozen-theme .time-display {
+            text-shadow: 0 0 20px rgba(93, 193, 216, 0.5);
+        }
+
+        body.frozen-theme .clock-card::before {
+            content: '❄';
+            color: rgba(93, 193, 216, 0.4);
+        }
+
+        /* Galaxy Theme - Deep space with stars */
+        body.galaxy-theme {
+            --bg-1: #000000;
+            --bg-2: #0d0221;
+            --bg-3: #1a0933;
+            --text: #e0e0ff;
+            --border: #7b2cbf;
+            --card-bg: rgba(123, 44, 191, 0.15);
+            --card-hover: rgba(123, 44, 191, 0.3);
+            --accent-color: rgba(123, 44, 191, 0.6);
+            --particle-symbol: '✦';
+            --particle-color: rgba(255, 215, 0, 0.9);
+            --theme-name: 'Galaxy Theme';
+            background: radial-gradient(ellipse at top, #1a0933 0%, #0d0221 50%, #000000 100%) !important;
+        }
+
+        body.galaxy-theme h1 {
+            text-shadow: 0 0 40px rgba(123, 44, 191, 0.8);
+        }
+
+        body.galaxy-theme .time-display {
+            text-shadow: 0 0 25px rgba(123, 44, 191, 0.7);
+        }
+
+        body.galaxy-theme .clock-card::before {
+            content: '✦';
+            color: rgba(255, 215, 0, 0.6);
+        }
+
+        /* Raindrop Theme - Water effects */
+        body.raindrop-theme {
+            --bg-1: #0f2027;
+            --bg-2: #203a43;
+            --bg-3: #2c5364;
+            --text: #d4f1f9;
+            --border: #4fc3f7;
+            --card-bg: rgba(79, 195, 247, 0.12);
+            --card-hover: rgba(79, 195, 247, 0.25);
+            --accent-color: rgba(79, 195, 247, 0.5);
+            --particle-symbol: '💧';
+            --particle-color: rgba(129, 212, 250, 0.6);
+            --theme-name: 'Raindrop Theme';
+            background: linear-gradient(to bottom, #0f2027 0%, #203a43 50%, #2c5364 100%) !important;
+        }
+
+        body.raindrop-theme h1 {
+            text-shadow: 0 0 35px rgba(79, 195, 247, 0.7);
+        }
+
+        body.raindrop-theme .time-display {
+            text-shadow: 0 0 20px rgba(79, 195, 247, 0.6);
+        }
+
+        body.raindrop-theme .clock-card::before {
+            content: '💧';
+            color: rgba(79, 195, 247, 0.5);
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 50%, var(--bg-3) 100%);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+            transition: all 0.5s ease;
+        }
+
+        .particles-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            font-size: 20px;
+            color: var(--particle-color);
+            animation: float 15s infinite ease-in-out;
+        }
+
+        /* Frozen theme snowflakes spin */
+        body.frozen-theme .particle {
+            animation: snowfall 10s infinite linear;
+        }
+
+        /* Galaxy theme stars twinkle */
+        body.galaxy-theme .particle {
+            animation: twinkle 3s infinite ease-in-out;
+        }
+
+        /* Raindrop theme drops fall */
+        body.raindrop-theme .particle {
+            animation: rainfall 8s infinite linear;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-30px) rotate(10deg);
+            }
+        }
+
+        @keyframes snowfall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0.3;
+            }
+        }
+
+        @keyframes twinkle {
+
+            0%,
+            100% {
+                opacity: 0.3;
+                transform: scale(0.8);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes rainfall {
+            0% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(100vh);
+                opacity: 0.2;
+            }
+        }
+
+        header {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--card-bg);
+            border-bottom: 2px solid var(--border);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 3em;
+            color: var(--text);
+            margin-bottom: 10px;
+            text-shadow: 0 0 30px var(--accent-color);
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .tagline {
+            color: var(--text);
+            opacity: 0.7;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            flex-wrap: wrap;
+        }
+
+        .theme-toggle,
+        .format-toggle,
+        .sound-toggle {
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            color: var(--text);
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s;
+            white-space: nowrap;
+            backdrop-filter: blur(5px);
+        }
+
+        .theme-toggle:hover,
+        .format-toggle:hover,
+        .sound-toggle:hover {
+            background: var(--card-hover);
+            box-shadow: 0 0 20px var(--accent-color);
+            transform: scale(1.05);
+        }
+
+        .theme-toggle.active,
+        .format-toggle.active,
+        .sound-toggle.active {
+            background: var(--card-hover);
+            border-color: var(--border);
+        }
+
+        .search-container {
+            position: relative;
+            z-index: 10;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 18px 25px;
+            font-size: 1.1em;
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 50px;
+            color: var(--text);
+            outline: none;
+            transition: all 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+        .search-box:focus {
+            border-color: var(--border);
+            box-shadow: 0 0 20px var(--accent-color);
+            background: var(--card-hover);
+        }
+
+        .search-box::placeholder {
+            color: var(--text);
+            opacity: 0.5;
+        }
+
+        .clocks-container {
+            position: relative;
+            z-index: 10;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .clock-card {
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+        }
+
+        .clock-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px var(--accent-color);
+            border-color: var(--border);
+            background: var(--card-hover);
+        }
+
+        .clock-card::before {
+            content: var(--particle-symbol);
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 2em;
+            color: var(--particle-color);
+        }
+
+        .country-flag {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .city-name {
+            font-size: 1.8em;
+            color: var(--text);
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .time-display {
+            font-size: 3em;
+            color: var(--text);
+            font-weight: bold;
+            margin: 20px 0;
+            text-shadow: 0 0 10px var(--accent-color);
+        }
+
+        .date-display {
+            color: var(--text);
+            opacity: 0.7;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .timezone {
+            color: var(--text);
+            opacity: 0.5;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .share-btn {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--accent-color);
+            border: 2px solid var(--border);
+            color: var(--text);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: all 0.3s;
+            z-index: 5;
+        }
+
+        .share-btn:hover {
+            background: var(--card-hover);
+            transform: scale(1.1);
+        }
+
+        .seo-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            margin-top: 20px;
+            text-align: left;
+            background: var(--card-hover);
+            border-radius: 10px;
+            padding: 0 20px;
+        }
+
+        .seo-content.expanded {
+            max-height: 2000px;
+            padding: 20px;
+        }
+
+        .seo-content h3 {
+            color: var(--text);
+            margin: 15px 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .seo-content h4 {
+            color: var(--text);
+            opacity: 0.8;
+            margin: 12px 0 8px 0;
+            font-size: 1em;
+        }
+
+        .seo-content p {
+            color: var(--text);
+            opacity: 0.7;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .seo-content a {
+            color: var(--text);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .seo-content a:hover {
+            opacity: 0.7;
+        }
+
+        footer {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--card-bg);
+            border-top: 2px solid var(--border);
+            margin-top: 50px;
+            color: var(--text);
+            backdrop-filter: blur(10px);
+        }
+
+        .no-results {
+            text-align: center;
+            color: var(--text);
+            font-size: 1.2em;
+            padding: 40px;
+        }
+
+        /* Tools Section Styles */
+        .tools-section {
+            position: relative;
+            z-index: 10;
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .tools-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .tools-header h2 {
+            font-size: 2em;
+            color: var(--text);
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px var(--accent-color);
+        }
+
+        .tools-header p {
+            color: var(--text);
+            opacity: 0.7;
+            font-size: 1.1em;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .tool-card {
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            text-decoration: none;
+            color: var(--text);
+            display: block;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px var(--accent-color);
+            background: var(--card-hover);
+            border-color: var(--border);
+        }
+
+        .tool-icon {
+            font-size: 4em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .tool-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .tool-description {
+            color: var(--text);
+            opacity: 0.7;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .tool-badge {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--text);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-top: 10px;
+            border: 1px solid var(--border);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .time-display {
+                font-size: 2.2em;
+            }
+
+            .controls {
+                position: static;
+                margin: 15px auto;
+                justify-content: center;
+            }
+
+            .tools-header h2 {
+                font-size: 1.5em;
+            }
+
+            .tool-icon {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="particles-bg" id="particlesContainer"></div>
+    <header>
+        <div class="controls">
+            <button class="theme-toggle" id="themeToggle">� <span id="themeName">Black</span></button>
+            <button class="format-toggle" id="formatToggle"><span id="formatText">12hr</span></button>
+            <p style="font-size:0.8em;margin-top:10px;">Share direct links like: #india #tokyo #london #newyork</p>
+            </footer>
+            <script>
+                const cities = [{ name: 'Kabul', timezone: 'Asia/Kabul', country: 'Afghanistan', flag: '🇦🇫', blog: 'Afghanistan uses AFT (UTC+4:30). Unique half-hour offset timezone.', faq: 'Q: Does Afghanistan observe DST? A: No, AFT year-round.' }, { name: 'Tirana', timezone: 'Europe/Tirane', country: 'Albania', flag: '🇦🇱' }, { name: 'Algiers', timezone: 'Africa/Algiers', country: 'Algeria', flag: '🇩🇿' }, { name: 'Buenos Aires', timezone: 'America/Argentina/Buenos_Aires', country: 'Argentina', flag: '🇦🇷', blog: 'Buenos Aires uses ART (UTC-3). Major South American financial hub.', faq: 'Q: Does Buenos Aires observe DST? A: No, ART year-round since 2009.' }, { name: 'Sydney', timezone: 'Australia/Sydney', country: 'Australia', flag: '🇦🇺' }, { name: 'Melbourne', timezone: 'Australia/Melbourne', country: 'Australia', flag: '🇦🇺' }, { name: 'Brisbane', timezone: 'Australia/Brisbane', country: 'Australia', flag: '🇦🇺' }, { name: 'Perth', timezone: 'Australia/Perth', country: 'Australia', flag: '🇦🇺' }, { name: 'Vienna', timezone: 'Europe/Vienna', country: 'Austria', flag: '🇦🇹' }, { name: 'Dhaka', timezone: 'Asia/Dhaka', country: 'Bangladesh', flag: '🇧🇩' }, { name: 'Brussels', timezone: 'Europe/Brussels', country: 'Belgium', flag: '🇧🇪' }, { name: 'La Paz', timezone: 'America/La_Paz', country: 'Bolivia', flag: '🇧🇴' }, { name: 'Brasilia', timezone: 'America/Sao_Paulo', country: 'Brazil', flag: '🇧🇷' }, { name: 'São Paulo', timezone: 'America/Sao_Paulo', country: 'Brazil', flag: '🇧🇷' }, { name: 'Rio de Janeiro', timezone: 'America/Sao_Paulo', country: 'Brazil', flag: '🇧🇷' }, { name: 'Sofia', timezone: 'Europe/Sofia', country: 'Bulgaria', flag: '🇧🇬' }, { name: 'Phnom Penh', timezone: 'Asia/Phnom_Penh', country: 'Cambodia', flag: '🇰🇭' }, { name: 'Ottawa', timezone: 'America/Toronto', country: 'Canada', flag: '🇨🇦' }, { name: 'Toronto', timezone: 'America/Toronto', country: 'Canada', flag: '🇨🇦' }, { name: 'Vancouver', timezone: 'America/Vancouver', country: 'Canada', flag: '🇨🇦' }, { name: 'Montreal', timezone: 'America/Montreal', country: 'Canada', flag: '🇨🇦' }, { name: 'Calgary', timezone: 'America/Edmonton', country: 'Canada', flag: '🇨🇦' }, { name: 'Santiago', timezone: 'America/Santiago', country: 'Chile', flag: '🇨🇱' }, { name: 'Beijing', timezone: 'Asia/Shanghai', country: 'China', flag: '🇨🇳', blog: 'All China uses CST (UTC+8) despite spanning 5 geographic timezones.', faq: 'Q: Why one timezone? A: Political unity.' }, { name: 'Shanghai', timezone: 'Asia/Shanghai', country: 'China', flag: '🇨🇳' }, { name: 'Hong Kong', timezone: 'Asia/Hong_Kong', country: 'China', flag: '🇭🇰' }, { name: 'Bogotá', timezone: 'America/Bogota', country: 'Colombia', flag: '🇨🇴' }, { name: 'San José', timezone: 'America/Costa_Rica', country: 'Costa Rica', flag: '🇨🇷' }, { name: 'Zagreb', timezone: 'Europe/Zagreb', country: 'Croatia', flag: '🇭🇷' }, { name: 'Havana', timezone: 'America/Havana', country: 'Cuba', flag: '🇨🇺' }, { name: 'Nicosia', timezone: 'Asia/Nicosia', country: 'Cyprus', flag: '🇨🇾' }, { name: 'Prague', timezone: 'Europe/Prague', country: 'Czech Republic', flag: '🇨🇿' }, { name: 'Copenhagen', timezone: 'Europe/Copenhagen', country: 'Denmark', flag: '🇩🇰' }, { name: 'Santo Domingo', timezone: 'America/Santo_Domingo', country: 'Dominican Republic', flag: '🇩🇴' }, { name: 'Quito', timezone: 'America/Guayaquil', country: 'Ecuador', flag: '🇪🇨' }, { name: 'Cairo', timezone: 'Africa/Cairo', country: 'Egypt', flag: '🇪🇬', blog: 'Cairo uses EET (UTC+2). Largest Middle East city.', faq: 'Q: Cairo timezone? A: EET (UTC+2) year-round.' }, { name: 'Tallinn', timezone: 'Europe/Tallinn', country: 'Estonia', flag: '🇪🇪' }, { name: 'Addis Ababa', timezone: 'Africa/Addis_Ababa', country: 'Ethiopia', flag: '🇪🇹' }, { name: 'Helsinki', timezone: 'Europe/Helsinki', country: 'Finland', flag: '🇫🇮' }, { name: 'Paris', timezone: 'Europe/Paris', country: 'France', flag: '🇫🇷', blog: 'Paris uses CET/CEST. Major European financial center.', faq: 'Q: Paris timezone? A: CET (UTC+1) winter, CEST (UTC+2) summer.' }, { name: 'Berlin', timezone: 'Europe/Berlin', country: 'Germany', flag: '🇩🇪', blog: 'Berlin uses CET/CEST. Europe\'s largest economy.', faq: 'Q: Germany timezone? A: CET/CEST.' }, { name: 'Accra', timezone: 'Africa/Accra', country: 'Ghana', flag: '🇬🇭' }, { name: 'Athens', timezone: 'Europe/Athens', country: 'Greece', flag: '🇬🇷' }, { name: 'Guatemala City', timezone: 'America/Guatemala', country: 'Guatemala', flag: '🇬🇹' }, { name: 'Port-au-Prince', timezone: 'America/Port-au-Prince', country: 'Haiti', flag: '🇭🇹' }, { name: 'Budapest', timezone: 'Europe/Budapest', country: 'Hungary', flag: '🇭🇺' }, { name: 'Reykjavik', timezone: 'Atlantic/Reykjavik', country: 'Iceland', flag: '🇮🇸' }, { name: 'New Delhi', timezone: 'Asia/Kolkata', country: 'India', flag: '🇮🇳', blog: 'India uses IST (UTC+5:30) nationwide. Unique half-hour offset.', faq: 'Q: Why half-hour? A: Geographic/political reasons.' }, { name: 'Mumbai', timezone: 'Asia/Kolkata', country: 'India', flag: '🇮🇳' }, { name: 'Kolkata', timezone: 'Asia/Kolkata', country: 'India', flag: '🇮🇳' }, { name: 'Bangalore', timezone: 'Asia/Kolkata', country: 'India', flag: '🇮🇳' }, { name: 'Jakarta', timezone: 'Asia/Jakarta', country: 'Indonesia', flag: '🇮🇩' }, { name: 'Tehran', timezone: 'Asia/Tehran', country: 'Iran', flag: '🇮🇷' }, { name: 'Baghdad', timezone: 'Asia/Baghdad', country: 'Iraq', flag: '🇮🇶' }, { name: 'Dublin', timezone: 'Europe/Dublin', country: 'Ireland', flag: '🇮🇪' }, { name: 'Jerusalem', timezone: 'Asia/Jerusalem', country: 'Israel', flag: '🇮🇱' }, { name: 'Tel Aviv', timezone: 'Asia/Jerusalem', country: 'Israel', flag: '🇮🇱' }, { name: 'Rome', timezone: 'Europe/Rome', country: 'Italy', flag: '🇮🇹' }, { name: 'Kingston', timezone: 'America/Jamaica', country: 'Jamaica', flag: '🇯🇲' }, { name: 'Tokyo', timezone: 'Asia/Tokyo', country: 'Japan', flag: '🇯🇵', blog: 'Tokyo uses JST (UTC+9) without DST. World\'s 3rd largest economy.', faq: 'Q: Does Japan observe DST? A: No, JST year-round.' }, { name: 'Amman', timezone: 'Asia/Amman', country: 'Jordan', flag: '🇯🇴' }, { name: 'Astana', timezone: 'Asia/Almaty', country: 'Kazakhstan', flag: '🇰🇿' }, { name: 'Nairobi', timezone: 'Africa/Nairobi', country: 'Kenya', flag: '🇰🇪' }, { name: 'Kuwait City', timezone: 'Asia/Kuwait', country: 'Kuwait', flag: '🇰🇼' }, { name: 'Riga', timezone: 'Europe/Riga', country: 'Latvia', flag: '🇱🇻' }, { name: 'Beirut', timezone: 'Asia/Beirut', country: 'Lebanon', flag: '🇱🇧' }, { name: 'Vilnius', timezone: 'Europe/Vilnius', country: 'Lithuania', flag: '🇱🇹' }, { name: 'Kuala Lumpur', timezone: 'Asia/Kuala_Lumpur', country: 'Malaysia', flag: '🇲🇾' }, { name: 'Valletta', timezone: 'Europe/Malta', country: 'Malta', flag: '🇲🇹' }, { name: 'Mexico City', timezone: 'America/Mexico_City', country: 'Mexico', flag: '🇲🇽' }, { name: 'Monaco', timezone: 'Europe/Monaco', country: 'Monaco', flag: '🇲🇨' }, { name: 'Ulaanbaatar', timezone: 'Asia/Ulaanbaatar', country: 'Mongolia', flag: '🇲🇳' }, { name: 'Rabat', timezone: 'Africa/Casablanca', country: 'Morocco', flag: '🇲🇦' }, { name: 'Casablanca', timezone: 'Africa/Casablanca', country: 'Morocco', flag: '🇲🇦' }, { name: 'Yangon', timezone: 'Asia/Yangon', country: 'Myanmar', flag: '🇲🇲' }, { name: 'Kathmandu', timezone: 'Asia/Kathmandu', country: 'Nepal', flag: '🇳🇵', blog: 'Nepal uses NPT (UTC+5:45). Unique 45-minute offset.', faq: 'Q: Why 45-minute offset? A: Rare timezone.' }, { name: 'Amsterdam', timezone: 'Europe/Amsterdam', country: 'Netherlands', flag: '🇳🇱' }, { name: 'Wellington', timezone: 'Pacific/Auckland', country: 'New Zealand', flag: '🇳🇿' }, { name: 'Auckland', timezone: 'Pacific/Auckland', country: 'New Zealand', flag: '🇳🇿' }, { name: 'Managua', timezone: 'America/Managua', country: 'Nicaragua', flag: '🇳🇮' }, { name: 'Abuja', timezone: 'Africa/Lagos', country: 'Nigeria', flag: '🇳🇬' }, { name: 'Lagos', timezone: 'Africa/Lagos', country: 'Nigeria', flag: '🇳🇬' }, { name: 'Pyongyang', timezone: 'Asia/Pyongyang', country: 'North Korea', flag: '🇰🇵' }, { name: 'Oslo', timezone: 'Europe/Oslo', country: 'Norway', flag: '🇳🇴' }, { name: 'Muscat', timezone: 'Asia/Muscat', country: 'Oman', flag: '🇴🇲' }, { name: 'Islamabad', timezone: 'Asia/Karachi', country: 'Pakistan', flag: '🇵🇰' }, { name: 'Karachi', timezone: 'Asia/Karachi', country: 'Pakistan', flag: '🇵🇰' }, { name: 'Panama City', timezone: 'America/Panama', country: 'Panama', flag: '🇵🇦' }, { name: 'Lima', timezone: 'America/Lima', country: 'Peru', flag: '🇵🇪' }, { name: 'Manila', timezone: 'Asia/Manila', country: 'Philippines', flag: '🇵🇭' }, { name: 'Warsaw', timezone: 'Europe/Warsaw', country: 'Poland', flag: '🇵🇱' }, { name: 'Lisbon', timezone: 'Europe/Lisbon', country: 'Portugal', flag: '🇵🇹' }, { name: 'Doha', timezone: 'Asia/Qatar', country: 'Qatar', flag: '🇶🇦' }, { name: 'Bucharest', timezone: 'Europe/Bucharest', country: 'Romania', flag: '🇷🇴' }, { name: 'Moscow', timezone: 'Europe/Moscow', country: 'Russia', flag: '🇷🇺', blog: 'Russia spans 11 time zones. Moscow uses MSK (UTC+3).', faq: 'Q: How many timezones? A: Eleven zones.' }, { name: 'Kigali', timezone: 'Africa/Kigali', country: 'Rwanda', flag: '🇷🇼' }, { name: 'Riyadh', timezone: 'Asia/Riyadh', country: 'Saudi Arabia', flag: '🇸🇦' }, { name: 'Dakar', timezone: 'Africa/Dakar', country: 'Senegal', flag: '🇸🇳' }, { name: 'Belgrade', timezone: 'Europe/Belgrade', country: 'Serbia', flag: '🇷🇸' }, { name: 'Singapore', timezone: 'Asia/Singapore', country: 'Singapore', flag: '🇸🇬', blog: 'Singapore uses SGT (UTC+8). Major Asian financial center.', faq: 'Q: Singapore timezone? A: SGT (UTC+8) without DST.' }, { name: 'Bratislava', timezone: 'Europe/Bratislava', country: 'Slovakia', flag: '🇸🇰' }, { name: 'Ljubljana', timezone: 'Europe/Ljubljana', country: 'Slovenia', flag: '🇸🇮' }, { name: 'Johannesburg', timezone: 'Africa/Johannesburg', country: 'South Africa', flag: '🇿🇦' }, { name: 'Seoul', timezone: 'Asia/Seoul', country: 'South Korea', flag: '🇰🇷' }, { name: 'Madrid', timezone: 'Europe/Madrid', country: 'Spain', flag: '🇪🇸' }, { name: 'Colombo', timezone: 'Asia/Colombo', country: 'Sri Lanka', flag: '🇱🇰' }, { name: 'Stockholm', timezone: 'Europe/Stockholm', country: 'Sweden', flag: '🇸🇪' }, { name: 'Zurich', timezone: 'Europe/Zurich', country: 'Switzerland', flag: '🇨🇭' }, { name: 'Damascus', timezone: 'Asia/Damascus', country: 'Syria', flag: '🇸🇾' }, { name: 'Taipei', timezone: 'Asia/Taipei', country: 'Taiwan', flag: '🇹🇼' }, { name: 'Bangkok', timezone: 'Asia/Bangkok', country: 'Thailand', flag: '🇹🇭' }, { name: 'Tunis', timezone: 'Africa/Tunis', country: 'Tunisia', flag: '🇹🇳' }, { name: 'Istanbul', timezone: 'Europe/Istanbul', country: 'Turkey', flag: '🇹🇷' }, { name: 'Kampala', timezone: 'Africa/Kampala', country: 'Uganda', flag: '🇺🇬' }, { name: 'Kiev', timezone: 'Europe/Kiev', country: 'Ukraine', flag: '🇺🇦' }, { name: 'Dubai', timezone: 'Asia/Dubai', country: 'UAE', flag: '🇦🇪', blog: 'UAE uses GST (UTC+4). Major Middle Eastern business hub.', faq: 'Q: UAE timezone? A: GST (UTC+4) year-round.' }, { name: 'Abu Dhabi', timezone: 'Asia/Dubai', country: 'UAE', flag: '🇦🇪' }, { name: 'London', timezone: 'Europe/London', country: 'UK', flag: '🇬🇧', blog: 'London uses GMT/BST (UTC+0/+1). Global financial center.', faq: 'Q: London time? A: GMT winter, BST summer.' }, { name: 'New York', timezone: 'America/New_York', country: 'USA', flag: '🇺🇸', blog: 'New York uses EST/EDT (UTC-5/-4). World\'s largest financial center.', faq: 'Q: NYC timezone? A: EST winter, EDT summer.' }, { name: 'Los Angeles', timezone: 'America/Los_Angeles', country: 'USA', flag: '🇺🇸' }, { name: 'Chicago', timezone: 'America/Chicago', country: 'USA', flag: '🇺🇸' }, { name: 'Houston', timezone: 'America/Chicago', country: 'USA', flag: '🇺🇸' }, { name: 'Washington DC', timezone: 'America/New_York', country: 'USA', flag: '🇺🇸' }, { name: 'Montevideo', timezone: 'America/Montevideo', country: 'Uruguay', flag: '🇺🇾' }, { name: 'Tashkent', timezone: 'Asia/Tashkent', country: 'Uzbekistan', flag: '🇺🇿' }, { name: 'Caracas', timezone: 'America/Caracas', country: 'Venezuela', flag: '🇻🇪' }, { name: 'Ho Chi Minh City', timezone: 'Asia/Ho_Chi_Minh', country: 'Vietnam', flag: '🇻🇳' }, { name: 'Hanoi', timezone: 'Asia/Ho_Chi_Minh', country: 'Vietnam', flag: '🇻🇳' }, { name: 'Sanaa', timezone: 'Asia/Aden', country: 'Yemen', flag: '🇾🇪' }, { name: 'Lusaka', timezone: 'Africa/Lusaka', country: 'Zambia', flag: '🇿🇲' }, { name: 'Harare', timezone: 'Africa/Harare', country: 'Zimbabwe', flag: '🇿🇼' }];
+
+                // Theme management
+                const themes = ['black', 'white', 'frozen', 'galaxy', 'raindrop'];
+                const themeNames = ['Black', 'White', 'Frozen', 'Galaxy', 'Raindrop'];
+                let currentThemeIndex = 0;
+                let soundEnabled = false, audioContext = null, is24HourFormat = false;
+
+                function initAudio() {
+                    if (!audioContext) audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                }
+
+                let tickTock = false;
+                function playTickSound() {
+                    if (!soundEnabled || !audioContext) return;
+                    const o = audioContext.createOscillator(), g = audioContext.createGain();
+                    o.connect(g);
+                    g.connect(audioContext.destination);
+                    o.frequency.value = tickTock ? 1200 : 1000;
+                    tickTock = !tickTock;
+                    o.type = 'sine';
+                    g.gain.setValueAtTime(0.15, audioContext.currentTime);
+                    g.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.05);
+                    o.start(audioContext.currentTime);
+                    o.stop(audioContext.currentTime + 0.05);
+                }
+
+                // Theme cycling
+                document.getElementById('themeToggle').addEventListener('click', () => {
+                    // Remove all theme classes
+                    document.body.classList.remove(...themes.map(t => t + '-theme'));
+
+                    // Move to next theme
+                    currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+
+                    // Apply new theme
+                    if (currentThemeIndex > 0) {
+                        document.body.classList.add(themes[currentThemeIndex] + '-theme');
+                    }
+
+                    // Update theme name
+                    document.getElementById('themeName').textContent = themeNames[currentThemeIndex];
+
+                    // Recreate particles for new theme
+                    createParticles();
+                });
+
+                document.getElementById('formatToggle').addEventListener('click', () => {
+                    is24HourFormat = !is24HourFormat;
+                    document.getElementById('formatText').textContent = is24HourFormat ? '24hr' : '12hr';
+                    document.getElementById('formatToggle').classList.toggle('active');
+                    renderClocks(cities.filter(city => document.querySelector(`[data-city="${city.name.toLowerCase()}"]`)));
+                });
+
+                document.getElementById('soundToggle').addEventListener('click', () => {
+                    soundEnabled = !soundEnabled;
+                    const icon = document.getElementById('soundIcon');
+                    if (soundEnabled) {
+                        initAudio();
+                        icon.textContent = '🔊';
+                        document.getElementById('soundToggle').classList.add('active');
+                    } else {
+                        icon.textContent = '🔇';
+                        document.getElementById('soundToggle').classList.remove('active');
+                    }
+                });
+
+                function createParticles() {
+                    const c = document.getElementById('particlesContainer');
+                    c.innerHTML = '';
+                    const particleCount = 25;
+
+                    for (let i = 0; i < particleCount; i++) {
+                        const p = document.createElement('div');
+                        p.className = 'particle';
+
+                        // Get current theme's particle symbol
+                        const style = getComputedStyle(document.body);
+                        const symbol = style.getPropertyValue('--particle-symbol').replace(/'/g, '').trim() || '❤';
+                        p.textContent = symbol;
+
+                        p.style.left = Math.random() * 100 + '%';
+                        p.style.top = Math.random() * 100 + '%';
+                        p.style.animationDelay = Math.random() * 5 + 's';
+                        p.style.fontSize = (Math.random() * 30 + 15) + 'px';
+                        c.appendChild(p);
+                    }
+                }
+
+                function updateClock(city) {
+                    const now = new Date();
+                    const opts = { timeZone: city.timezone, hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: !is24HourFormat };
+                    const dateOpts = { timeZone: city.timezone, weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                    return { time: now.toLocaleTimeString('en-US', opts), date: now.toLocaleDateString('en-US', dateOpts) };
+                }
+
+                function toggleSEOContent(el) {
+                    const content = el.querySelector('.seo-content');
+                    if (content) content.classList.toggle('expanded');
+                }
+
+                function shareCity(cityName, event) {
+                    event.stopPropagation();
+                    const url = window.location.origin + window.location.pathname + '#' + cityName.toLowerCase().replace(/\s+/g, '-');
+                    navigator.clipboard.writeText(url).then(() => {
+                        alert('✅ Link copied! Share: ' + url);
+                    });
+                }
+
+                function handleCityHash() {
+                    const hash = window.location.hash.substring(1);
+                    if (!hash) return;
+                    const cityName = hash.replace(/-/g, ' ');
+                    const city = cities.find(c => c.name.toLowerCase() === cityName || c.country.toLowerCase() === cityName);
+                    if (city) {
+                        document.title = `${city.name} Time - Live Clock | WorldTimeZoneLive`;
+                        setTimeout(() => {
+                            const card = document.querySelector(`[data-city="${city.name.toLowerCase()}"]`);
+                            if (card) {
+                                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                const content = card.querySelector('.seo-content');
+                                if (content && !content.classList.contains('expanded')) {
+                                    content.classList.add('expanded');
+                                }
+                                card.style.border = '3px solid var(--border)';
+                                card.style.boxShadow = '0 0 30px var(--accent-color)';
+                                setTimeout(() => {
+                                    card.style.border = '';
+                                    card.style.boxShadow = '';
+                                }, 3000);
+                            }
+                        }, 500);
+                    }
+                }
+
+                function renderClocks(citiesToShow = cities) {
+                    const c = document.getElementById('clocksContainer');
+                    if (citiesToShow.length === 0) {
+                        c.innerHTML = '<div class="no-results">No cities found. Try another search!</div>';
+                        return;
+                    }
+                    c.innerHTML = citiesToShow.map(city => {
+                        const { time, date } = updateClock(city);
+                        const blog = city.blog || `${city.name} is in ${city.country}. Track accurate time in ${city.timezone} for business meetings.`;
+                        const faq = city.faq || `Q: What time is it in ${city.name}? A: Check above for live time in ${city.country}.`;
+                        const shareUrl = '#' + city.name.toLowerCase().replace(/\s+/g, '-');
+                        return `<div class="clock-card" data-city="${city.name.toLowerCase()}" onclick="toggleSEOContent(this)">
+<button class="share-btn" onclick="shareCity('${city.name}',event)" title="Share ${city.name} time">🔗</button>
+<span class="country-flag">${city.flag}</span>
+<div class="city-name">${city.name}</div>
+<div class="time-display">${time}</div>
+<div class="date-display">${date}</div>
+<div class="timezone">${city.country} | ${city.timezone}</div>
+<div class="seo-content">
+<h3>📝 ${city.name} Time Guide</h3>
+<p><strong>Country:</strong> ${city.country}</p>
+<p><strong>Timezone:</strong> ${city.timezone}</p>
+<p><strong>Direct Link:</strong> <a href="${shareUrl}">worldtimezonelive.com${shareUrl}</a></p>
+<h3>✍️ Blog: ${city.name} Time</h3>
+<p>${blog}</p>
+<p>Perfect for scheduling meetings, coordinating with ${city.country}, travel planning, and global business operations.</p>
+<h3>❓ FAQ: ${city.name} Timezone</h3>
+<p>${faq}</p>
+<h4>Q: How to share ${city.name} time?</h4>
+<p>A: Click the 🔗 Share button or use direct link: <strong>${shareUrl}</strong></p>
+<h4>Q: Is this clock accurate?</h4>
+<p>A: Yes, uses official IANA timezone database for ${city.timezone}.</p>
+</div>
+</div>`;
+                    }).join('');
+                    handleCityHash();
+                }
+
+                function updateAllClocks() {
+                    document.querySelectorAll('.clock-card').forEach(card => {
+                        const cityName = card.dataset.city;
+                        const city = cities.find(c => c.name.toLowerCase() === cityName);
+                        if (city) {
+                            const { time, date } = updateClock(city);
+                            card.querySelector('.time-display').textContent = time;
+                            card.querySelector('.date-display').textContent = date;
+                        }
+                    });
+                    playTickSound();
+                }
+
+                document.getElementById('searchInput').addEventListener('input', e => {
+                    const term = e.target.value.toLowerCase();
+                    const filtered = cities.filter(city =>
+                        city.name.toLowerCase().includes(term) ||
+                        city.country.toLowerCase().includes(term) ||
+                        city.timezone.toLowerCase().includes(term));
+                    renderClocks(filtered);
+                });
+
+                window.addEventListener('hashchange', handleCityHash);
+                createParticles();
+                renderClocks();
+                setInterval(updateAllClocks, 1000);
+            </script>
+</body>
+
+</html>
