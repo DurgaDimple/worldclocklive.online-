@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage - Highest Priority -->
+  <url>
+    <loc>https://worldliveclock.online/</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- All City Pages (converted from hash -> static .html) -->
+
+  <!-- Afghanistan -->
+  <url>
+    <loc>https://worldliveclock.online/kabul.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Albania -->
+  <url>
+    <loc>https://worldliveclock.online/tirana.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Algeria -->
+  <url>
+    <loc>https://worldliveclock.online/algiers.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Argentina -->
+  <url>
+    <loc>https://worldliveclock.online/buenos-aires.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Australia -->
+  <url>
+    <loc>https://worldliveclock.online/sydney.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/melbourne.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/brisbane.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/perth.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Austria -->
+  <url>
+    <loc>https://worldliveclock.online/vienna.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Bangladesh -->
+  <url>
+    <loc>https://worldliveclock.online/dhaka.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Belgium -->
+  <url>
+    <loc>https://worldliveclock.online/brussels.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Bolivia -->
+  <url>
+    <loc>https://worldliveclock.online/la-paz.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Brazil -->
+  <url>
+    <loc>https://worldliveclock.online/brasilia.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/sao-paulo.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/rio-de-janeiro.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Bulgaria -->
+  <url>
+    <loc>https://worldliveclock.online/sofia.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Cambodia -->
+  <url>
+    <loc>https://worldliveclock.online/phnom-penh.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Canada -->
+  <url>
+    <loc>https://worldliveclock.online/ottawa.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/toronto.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/vancouver.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/montreal.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/calgary.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Chile -->
+  <url>
+    <loc>https://worldliveclock.online/santiago.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- China -->
+  <url>
+    <loc>https://worldliveclock.online/beijing.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/shanghai.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/hong-kong.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Colombia -->
+  <url>
+    <loc>https://worldliveclock.online/bogota.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Costa Rica -->
+  <url>
+    <loc>https://worldliveclock.online/san-jose.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Croatia -->
+  <url>
+    <loc>https://worldliveclock.online/zagreb.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Cuba -->
+  <url>
+    <loc>https://worldliveclock.online/havana.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Cyprus -->
+  <url>
+    <loc>https://worldliveclock.online/nicosia.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Czech Republic -->
+  <url>
+    <loc>https://worldliveclock.online/prague.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Denmark -->
+  <url>
+    <loc>https://worldliveclock.online/copenhagen.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Dominican Republic -->
+  <url>
+    <loc>https://worldliveclock.online/santo-domingo.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ecuador -->
+  <url>
+    <loc>https://worldliveclock.online/quito.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Egypt -->
+  <url>
+    <loc>https://worldliveclock.online/cairo.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Estonia -->
+  <url>
+    <loc>https://worldliveclock.online/tallinn.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ethiopia -->
+  <url>
+    <loc>https://worldliveclock.online/addis-ababa.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Finland -->
+  <url>
+    <loc>https://worldliveclock.online/helsinki.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- France -->
+  <url>
+    <loc>https://worldliveclock.online/paris.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Germany -->
+  <url>
+    <loc>https://worldliveclock.online/berlin.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Ghana -->
+  <url>
+    <loc>https://worldliveclock.online/accra.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Greece -->
+  <url>
+    <loc>https://worldliveclock.online/athens.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Guatemala -->
+  <url>
+    <loc>https://worldliveclock.online/guatemala-city.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Haiti -->
+  <url>
+    <loc>https://worldliveclock.online/port-au-prince.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Hungary -->
+  <url>
+    <loc>https://worldliveclock.online/budapest.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Iceland -->
+  <url>
+    <loc>https://worldliveclock.online/reykjavik.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- India - High Priority -->
+  <url>
+    <loc>https://worldliveclock.online/new-delhi.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/mumbai.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/kolkata.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/bangalore.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/india.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Indonesia -->
+  <url>
+    <loc>https://worldliveclock.online/jakarta.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Iran -->
+  <url>
+    <loc>https://worldliveclock.online/tehran.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Iraq -->
+  <url>
+    <loc>https://worldliveclock.online/baghdad.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ireland -->
+  <url>
+    <loc>https://worldliveclock.online/dublin.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Israel -->
+  <url>
+    <loc>https://worldliveclock.online/jerusalem.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/tel-aviv.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Italy -->
+  <url>
+    <loc>https://worldliveclock.online/rome.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Jamaica -->
+  <url>
+    <loc>https://worldliveclock.online/kingston.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Japan - High Priority -->
+  <url>
+    <loc>https://worldliveclock.online/tokyo.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Jordan -->
+  <url>
+    <loc>https://worldliveclock.online/amman.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Kazakhstan -->
+  <url>
+    <loc>https://worldliveclock.online/astana.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Kenya -->
+  <url>
+    <loc>https://worldliveclock.online/nairobi.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Kuwait -->
+  <url>
+    <loc>https://worldliveclock.online/kuwait-city.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Latvia -->
+  <url>
+    <loc>https://worldliveclock.online/riga.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Lebanon -->
+  <url>
+    <loc>https://worldliveclock.online/beirut.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Lithuania -->
+  <url>
+    <loc>https://worldliveclock.online/vilnius.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Malaysia -->
+  <url>
+    <loc>https://worldliveclock.online/kuala-lumpur.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Malta -->
+  <url>
+    <loc>https://worldliveclock.online/valletta.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Mexico -->
+  <url>
+    <loc>https://worldliveclock.online/mexico-city.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Monaco -->
+  <url>
+    <loc>https://worldliveclock.online/monaco.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Mongolia -->
+  <url>
+    <loc>https://worldliveclock.online/ulaanbaatar.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Morocco -->
+  <url>
+    <loc>https://worldliveclock.online/rabat.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/casablanca.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Myanmar -->
+  <url>
+    <loc>https://worldliveclock.online/yangon.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Nepal -->
+  <url>
+    <loc>https://worldliveclock.online/kathmandu.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Netherlands -->
+  <url>
+    <loc>https://worldliveclock.online/amsterdam.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- New Zealand -->
+  <url>
+    <loc>https://worldliveclock.online/wellington.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/auckland.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Nicaragua -->
+  <url>
+    <loc>https://worldliveclock.online/managua.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Nigeria -->
+  <url>
+    <loc>https://worldliveclock.online/abuja.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/lagos.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- North Korea -->
+  <url>
+    <loc>https://worldliveclock.online/pyongyang.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Norway -->
+  <url>
+    <loc>https://worldliveclock.online/oslo.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Oman -->
+  <url>
+    <loc>https://worldliveclock.online/muscat.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Pakistan -->
+  <url>
+    <loc>https://worldliveclock.online/islamabad.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/karachi.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Panama -->
+  <url>
+    <loc>https://worldliveclock.online/panama-city.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Peru -->
+  <url>
+    <loc>https://worldliveclock.online/lima.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Philippines -->
+  <url>
+    <loc>https://worldliveclock.online/manila.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Poland -->
+  <url>
+    <loc>https://worldliveclock.online/warsaw.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Portugal -->
+  <url>
+    <loc>https://worldliveclock.online/lisbon.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Qatar -->
+  <url>
+    <loc>https://worldliveclock.online/doha.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Romania -->
+  <url>
+    <loc>https://worldliveclock.online/bucharest.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Russia -->
+  <url>
+    <loc>https://worldliveclock.online/moscow.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Rwanda -->
+  <url>
+    <loc>https://worldliveclock.online/kigali.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Saudi Arabia -->
+  <url>
+    <loc>https://worldliveclock.online/riyadh.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Senegal -->
+  <url>
+    <loc>https://worldliveclock.online/dakar.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Serbia -->
+  <url>
+    <loc>https://worldliveclock.online/belgrade.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Singapore - High Priority -->
+  <url>
+    <loc>https://worldliveclock.online/singapore.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Slovakia -->
+  <url>
+    <loc>https://worldliveclock.online/bratislava.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Slovenia -->
+  <url>
+    <loc>https://worldliveclock.online/ljubljana.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- South Africa -->
+  <url>
+    <loc>https://worldliveclock.online/johannesburg.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- South Korea -->
+  <url>
+    <loc>https://worldliveclock.online/seoul.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Spain -->
+  <url>
+    <loc>https://worldliveclock.online/madrid.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Sri Lanka -->
+  <url>
+    <loc>https://worldliveclock.online/colombo.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Sweden -->
+  <url>
+    <loc>https://worldliveclock.online/stockholm.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Switzerland -->
+  <url>
+    <loc>https://worldliveclock.online/zurich.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Syria -->
+  <url>
+    <loc>https://worldliveclock.online/damascus.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Taiwan -->
+  <url>
+    <loc>https://worldliveclock.online/taipei.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Thailand -->
+  <url>
+    <loc>https://worldliveclock.online/bangkok.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Tunisia -->
+  <url>
+    <loc>https://worldliveclock.online/tunis.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Turkey -->
+  <url>
+    <loc>https://worldliveclock.online/istanbul.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Uganda -->
+  <url>
+    <loc>https://worldliveclock.online/kampala.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ukraine -->
+  <url>
+    <loc>https://worldliveclock.online/kiev.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- UAE - High Priority -->
+  <url>
+    <loc>https://worldliveclock.online/dubai.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/abu-dhabi.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- UK - Highest Priority -->
+  <url>
+    <loc>https://worldliveclock.online/london.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- USA - Highest Priority -->
+  <url>
+    <loc>https://worldliveclock.online/new-york.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/los-angeles.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/chicago.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/houston.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/washington-dc.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Uruguay -->
+  <url>
+    <loc>https://worldliveclock.online/montevideo.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Uzbekistan -->
+  <url>
+    <loc>https://worldliveclock.online/tashkent.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Venezuela -->
+  <url>
+    <loc>https://worldliveclock.online/caracas.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Vietnam -->
+  <url>
+    <loc>https://worldliveclock.online/ho-chi-minh-city.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://worldliveclock.online/hanoi.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Yemen -->
+  <url>
+    <loc>https://worldliveclock.online/sanaa.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Zambia -->
+  <url>
+    <loc>https://worldliveclock.online/lusaka.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Zimbabwe -->
+  <url>
+    <loc>https://worldliveclock.online/harare.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock - 250+ Cities Live Time</title>
+    <meta name="description" content="Live world clock with 250+ cities and 195+ countries. Real-time accurate time display with no API calls.">
+    <!-- Critical CSS inlined for LCP optimization -->
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--bg:#000;--text:#fff;--card:#1a1a1a;--border:#333;--hover:#2a2a2a}
+        body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
+        header{text-align:center;padding:20px;border-bottom:1px solid var(--border)}
+        h1{font-size:clamp(1.5rem,4vw,2.5rem);margin:10px 0}
+        .search{max-width:600px;margin:20px auto;padding:0 20px}
+        .search input{width:100%;padding:12px 20px;font-size:16px;background:var(--card);border:1px solid var(--border);border-radius:25px;color:var(--text);outline:none}
+        .search input:focus{border-color:#4a9eff}
+        .container{max-width:1400px;margin:0 auto;padding:20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+        .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center;height:220px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s,box-shadow .2s}
+        .card:hover{transform:translateY(-4px);box-shadow:0 8px 16px rgba(0,0,0,.3)}
+        .flag{font-size:2.5rem;margin-bottom:8px}
+        .city{font-size:1.2rem;font-weight:600;margin-bottom:8px}
+        .time{font-size:2rem;font-weight:700;margin:8px 0;min-height:2.5rem}
+        .date{font-size:.9rem;opacity:.7;margin-top:8px}
+        .tz{font-size:.8rem;opacity:.6;margin-top:4px}
+        .skeleton{background:linear-gradient(90deg,#2a2a2a 25%,#333 50%,#2a2a2a 75%);background-size:200% 100%;animation:loading 1.5s infinite}
+        @keyframes loading{0%{background-position:200% 0}100%{background-position:-200% 0}}
+        .no-results{text-align:center;padding:40px;font-size:1.2rem;opacity:.7}
+        footer{text-align:center;padding:30px 20px;border-top:1px solid var(--border);margin-top:40px;opacity:.7;font-size:.9rem}
+        @media(max-width:768px){.container{grid-template-columns:1fr;gap:15px}.card{height:200px}}
+    </style>
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+</head>
+<body>
+    <header>
+        <h1>🌍 World Clock</h1>
+        <p>250+ Cities • 195+ Countries • Live Time</p>
+    </header>
+    <div class="search">
+        <input type="text" id="search" placeholder="Search cities, countries, or timezones..." autocomplete="off">
+    </div>
+    <div class="container" id="container"></div>
+    <footer>
+        <p>World Clock - Accurate time without API calls | 2026</p>
+    </footer>
+    <script defer src="script.js"></script>
+</body>
+</html>
+
