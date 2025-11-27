@@ -3,42 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Zone Converter - Convert Time Between Any Two Timezones | WorldTimeZoneLive</title>
-    <meta name="description" content="Free online time zone converter. Convert time between any two timezones instantly. Compare 195+ countries, 250+ cities. Perfect for scheduling meetings, travel planning, and global business.">
-    <meta name="keywords" content="time zone converter, timezone converter, convert time zones, time converter online, world time converter, international time converter, time difference calculator, timezone calculator">
-    <link rel="canonical" href="https://worldtimezonelive.com/timezone-converter">
-    
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WNLBF935');</script>
-    <!-- End Google Tag Manager -->
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Time Zone Converter - Convert Time Between Any Two Timezones">
-    <meta property="og:description" content="Free online time zone converter. Convert time between 195+ countries instantly.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://worldtimezonelive.com/timezone-converter">
-    
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Time Zone Converter",
-      "description": "Free online time zone converter to convert time between any two timezones",
-      "url": "https://worldtimezonelive.com/timezone-converter",
-      "applicationCategory": "UtilityApplication",
-      "operatingSystem": "Any",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
-    }
-    </script>
+    <title>Time Zone Converter - Convert Time Between Any Two Timezones</title>
     
     <style>
         * {
@@ -48,561 +13,664 @@
         }
 
         :root {
-            --bg-1: #000;
-            --bg-2: #222;
-            --bg-3: #000;
-            --text: #fff;
-            --border: #fff;
-            --card-bg: rgba(255, 255, 255, 0.05);
-            --card-hover: rgba(255, 255, 255, 0.1);
-            --accent-color: rgba(255, 0, 0, 0.3);
-            --particle-symbol: '❤';
-            --particle-color: rgba(255, 0, 0, 0.3);
-            --theme-name: 'Black Theme';
-        }
-
-        body.white-theme {
-            --bg-1: #fff;
-            --bg-2: #f5f5f5;
-            --bg-3: #fff;
-            --text: #000;
-            --border: #000;
-            --card-bg: rgba(0, 0, 0, 0.05);
-            --card-hover: rgba(0, 0, 0, 0.1);
-            --accent-color: rgba(255, 0, 0, 0.3);
-            --particle-symbol: '❤';
-            --particle-color: rgba(255, 0, 0, 0.3);
-            --theme-name: 'White Theme';
-        }
-
-        /* Frozen Movie Theme - Icy blues with snowflakes */
-        body.frozen-theme {
-            --bg-1: #0a1628;
-            --bg-2: #1e3a5f;
-            --bg-3: #2d5f8d;
-            --text: #e8f4f8;
-            --border: #5dc1d8;
-            --card-bg: rgba(93, 193, 216, 0.1);
-            --card-hover: rgba(93, 193, 216, 0.25);
-            --accent-color: rgba(93, 193, 216, 0.5);
-            --particle-symbol: '❄';
-            --particle-color: rgba(255, 255, 255, 0.8);
-            --theme-name: 'Frozen Theme';
-            background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 50%, #2d5f8d 100%) !important;
-        }
-
-        body.frozen-theme h1 {
-            text-shadow: 0 0 30px rgba(93, 193, 216, 0.6);
-        }
-
-        /* Galaxy Theme - Deep space with stars */
-        body.galaxy-theme {
-            --bg-1: #000000;
-            --bg-2: #0d0221;
-            --bg-3: #1a0933;
-            --text: #e0e0ff;
-            --border: #7b2cbf;
-            --card-bg: rgba(123, 44, 191, 0.15);
-            --card-hover: rgba(123, 44, 191, 0.3);
-            --accent-color: rgba(123, 44, 191, 0.6);
-            --particle-symbol: '✦';
-            --particle-color: rgba(255, 215, 0, 0.9);
-            --theme-name: 'Galaxy Theme';
-            background: radial-gradient(ellipse at top, #1a0933 0%, #0d0221 50%, #000000 100%) !important;
-        }
-
-        body.galaxy-theme h1 {
-            text-shadow: 0 0 40px rgba(123, 44, 191, 0.8);
-        }
-
-        /* Raindrop Theme - Water effects */
-        body.raindrop-theme {
-            --bg-1: #0f2027;
-            --bg-2: #203a43;
-            --bg-3: #2c5364;
-            --text: #d4f1f9;
-            --border: #4fc3f7;
-            --card-bg: rgba(79, 195, 247, 0.12);
-            --card-hover: rgba(79, 195, 247, 0.25);
-            --accent-color: rgba(79, 195, 247, 0.5);
-            --particle-symbol: '💧';
-            --particle-color: rgba(129, 212, 250, 0.6);
-            --theme-name: 'Raindrop Theme';
-            background: linear-gradient(to bottom, #0f2027 0%, #203a43 50%, #2c5364 100%) !important;
-        }
-
-        body.raindrop-theme h1 {
-            text-shadow: 0 0 35px rgba(79, 195, 247, 0.7);
-        }
-
-        /* Mute Theme - Silent grays with mute icons */
-        body.mute-theme {
-            --bg-1: #1a1a1a;
-            --bg-2: #2d2d2d;
-            --bg-3: #3a3a3a;
-            --text: #e0e0e0;
-            --border: #888888;
-            --card-bg: rgba(136, 136, 136, 0.1);
-            --card-hover: rgba(136, 136, 136, 0.2);
-            --accent-color: rgba(136, 136, 136, 0.4);
-            --particle-symbol: '🔇';
-            --particle-color: rgba(200, 200, 200, 0.6);
-            --theme-name: 'Mute Theme';
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #3a3a3a 100%) !important;
-        }
-
-        body.mute-theme h1 {
-            text-shadow: 0 0 30px rgba(136, 136, 136, 0.5);
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --primary-light: #818cf8;
+            --secondary: #ec4899;
+            --bg-dark: #0f172a;
+            --bg-medium: #1e293b;
+            --bg-light: #334155;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #475569;
+            --success: #10b981;
+            --card-bg: rgba(30, 41, 59, 0.8);
+            --glow: rgba(99, 102, 241, 0.4);
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 50%, var(--bg-3) 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
             color: var(--text);
             min-height: 100vh;
-            transition: all 0.5s ease;
             overflow-x: hidden;
+            position: relative;
         }
 
-        .particles-bg {
+        /* Animated background */
+        .bg-animation {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            pointer-events: none;
             z-index: 0;
             overflow: hidden;
         }
 
-        .particle {
+        .orb {
             position: absolute;
-            font-size: 20px;
-            color: var(--particle-color);
-            animation: float 15s infinite ease-in-out;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            animation: float 20s infinite ease-in-out;
         }
 
-        /* Frozen theme snowflakes spin */
-        body.frozen-theme .particle {
-            animation: snowfall 10s infinite linear;
+        .orb-1 {
+            width: 500px;
+            height: 500px;
+            background: var(--primary);
+            top: -250px;
+            left: -250px;
+            animation-delay: 0s;
         }
 
-        /* Galaxy theme stars twinkle */
-        body.galaxy-theme .particle {
-            animation: twinkle 3s infinite ease-in-out;
+        .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: var(--secondary);
+            bottom: -200px;
+            right: -200px;
+            animation-delay: 7s;
         }
 
-        /* Raindrop theme drops fall */
-        body.raindrop-theme .particle {
-            animation: rainfall 8s infinite linear;
-        }
-
-        /* Mute theme icons fade */
-        body.mute-theme .particle {
-            animation: muteFade 12s infinite ease-in-out;
+        .orb-3 {
+            width: 300px;
+            height: 300px;
+            background: var(--primary-light);
+            top: 50%;
+            left: 50%;
+            animation-delay: 14s;
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-30px) rotate(10deg); }
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(50px, -50px) scale(1.1); }
+            66% { transform: translate(-30px, 30px) scale(0.9); }
         }
 
-        @keyframes snowfall {
-            0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(100vh) rotate(360deg); opacity: 0.3; }
-        }
-
-        @keyframes twinkle {
-            0%, 100% { opacity: 0.3; transform: scale(0.8); }
-            50% { opacity: 1; transform: scale(1.2); }
-        }
-
-        @keyframes rainfall {
-            0% { transform: translateY(-100px); opacity: 1; }
-            100% { transform: translateY(100vh); opacity: 0.2; }
-        }
-
-        @keyframes muteFade {
-            0%, 100% { opacity: 0.3; transform: scale(0.9) translateY(0); }
-            50% { opacity: 0.7; transform: scale(1.1) translateY(-20px); }
-        }
-
+        /* Header */
         header {
             position: relative;
             z-index: 10;
+            padding: 2rem;
             text-align: center;
-            padding: 30px 20px;
-            background: var(--card-bg);
-            border-bottom: 2px solid var(--border);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(20px);
+            background: rgba(15, 23, 42, 0.7);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         h1 {
-            font-size: 2.5em;
-            color: var(--text);
-            margin-bottom: 10px;
-            text-shadow: 0 0 30px var(--accent-color);
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 40px var(--glow);
         }
 
-        .controls {
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .theme-controls {
             position: absolute;
-            top: 15px;
-            right: 20px;
+            top: 2rem;
+            right: 2rem;
             display: flex;
-            gap: 10px;
+            gap: 0.75rem;
         }
 
-        .theme-toggle, .home-btn {
+        .icon-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
             background: var(--card-bg);
-            border: 2px solid var(--border);
+            border: 1px solid var(--border);
             color: var(--text);
-            padding: 10px 20px;
-            border-radius: 50px;
             cursor: pointer;
-            font-size: 0.9em;
-            transition: all 0.3s;
-            backdrop-filter: blur(5px);
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .theme-toggle:hover, .home-btn:hover {
-            background: var(--card-hover);
-            box-shadow: 0 0 20px var(--accent-color);
-            transform: scale(1.05);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .tool-card {
-            background: var(--card-bg);
-            border: 2px solid var(--border);
-            border-radius: 20px;
-            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
             backdrop-filter: blur(10px);
-            margin-bottom: 30px;
+        }
+
+        .icon-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px var(--glow);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Converter Card */
+        .converter-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            border: 1px solid var(--border);
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            margin-bottom: 3rem;
         }
 
         .converter-grid {
             display: grid;
             grid-template-columns: 1fr auto 1fr;
-            gap: 30px;
-            align-items: center;
-            margin: 30px 0;
+            gap: 3rem;
+            align-items: start;
+            margin-bottom: 2rem;
         }
 
-        .timezone-selector {
+        .timezone-panel {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 1.5rem;
         }
 
-        .timezone-selector label {
-            font-weight: bold;
-            font-size: 1.1em;
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         select, input {
-            background: var(--card-bg);
+            background: var(--bg-medium);
             border: 2px solid var(--border);
+            border-radius: 15px;
             color: var(--text);
-            padding: 15px;
-            border-radius: 10px;
-            font-size: 1.1em;
-            width: 100%;
-            backdrop-filter: blur(5px);
+            padding: 1rem 1.25rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        select:hover, input:hover {
+            border-color: var(--primary-light);
         }
 
         select:focus, input:focus {
             outline: none;
-            box-shadow: 0 0 15px var(--accent-color);
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px var(--glow);
         }
 
-        .arrow {
-            font-size: 3em;
-            text-align: center;
+        .swap-btn {
+            align-self: center;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px var(--glow);
         }
 
-        .result-display {
+        .swap-btn:hover {
+            transform: rotate(180deg) scale(1.1);
+            box-shadow: 0 15px 40px var(--glow);
+        }
+
+        /* Result Display */
+        .result-box {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            border-radius: 20px;
+            padding: 2.5rem;
             text-align: center;
-            padding: 30px;
-            background: var(--card-hover);
-            border-radius: 15px;
-            margin: 30px 0;
+            box-shadow: 0 10px 40px var(--glow);
+            border: 2px solid var(--primary-light);
         }
 
         .result-time {
-            font-size: 4em;
-            font-weight: bold;
-            color: var(--text);
-            text-shadow: 0 0 20px var(--accent-color);
-            margin: 20px 0;
+            font-size: 4rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
         }
 
         .result-date {
-            font-size: 1.5em;
-            opacity: 0.8;
-            margin-top: 10px;
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .result-timezone {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.5rem;
+        }
+
+        /* Action Buttons */
+        .action-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .btn {
-            background: var(--accent-color);
-            border: 2px solid var(--border);
-            color: var(--text);
-            padding: 15px 30px;
+            padding: 1rem 2.5rem;
             border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
             cursor: pointer;
-            font-size: 1em;
-            font-weight: bold;
-            transition: all 0.3s;
-            margin: 10px;
+            transition: all 0.3s ease;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        .btn:hover {
-            background: var(--card-hover);
-            box-shadow: 0 0 20px var(--accent-color);
-            transform: scale(1.05);
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 5px 20px var(--glow);
         }
 
-        .seo-section {
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 40px 20px;
-            background: var(--card-bg);
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px var(--glow);
+        }
+
+        .btn-secondary {
+            background: var(--bg-medium);
+            color: var(--text);
             border: 2px solid var(--border);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
         }
 
-        .seo-section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
+        .btn-secondary:hover {
+            background: var(--bg-light);
+            border-color: var(--primary);
+        }
+
+        /* Quick Links */
+        .quick-links {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            border: 1px solid var(--border);
+            padding: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .quick-links h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
             color: var(--text);
         }
 
-        .seo-section p {
-            line-height: 1.8;
-            margin-bottom: 15px;
-            opacity: 0.9;
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
         }
 
-        @media (max-width: 768px) {
+        .link-category {
+            background: var(--bg-medium);
+            padding: 1.5rem;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .link-category:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .link-category h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .quick-link {
+            display: inline-block;
+            color: var(--primary-light);
+            text-decoration: none;
+            padding: 0.5rem 0;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .quick-link:hover {
+            color: var(--secondary);
+            transform: translateX(5px);
+        }
+
+        .link-separator {
+            color: var(--text-muted);
+            margin: 0 0.5rem;
+        }
+
+        /* Info Section */
+        .info-section {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            border: 1px solid var(--border);
+            padding: 3rem;
+        }
+
+        .info-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+
+        .info-section p {
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .faq-item {
+            background: var(--bg-medium);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer a {
+            color: var(--primary-light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
             .converter-grid {
                 grid-template-columns: 1fr;
+                gap: 2rem;
             }
-            .arrow {
+
+            .swap-btn {
                 transform: rotate(90deg);
+                margin: 1rem auto;
             }
-            h1 { font-size: 1.8em; }
-            .result-time { font-size: 2.5em; }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .result-time {
+                font-size: 2.5rem;
+            }
+
+            .theme-controls {
+                position: static;
+                justify-content: center;
+                margin-top: 1rem;
+            }
+
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .converter-card, .quick-links, .info-section {
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNLBF935"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    <div class="particles-bg" id="particlesContainer"></div>
+    <div class="bg-animation">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
     
     <header>
-        <div class="controls">
-            <a href="index.html" class="home-btn">🏠 Home</a>
-            <button class="theme-toggle" id="themeToggle">🌓 <span id="themeName">Black</span></button>
+        <div class="theme-controls">
+            <button class="icon-btn" onclick="window.location.href='index.html'" title="Home">🏠</button>
+            <button class="icon-btn" onclick="toggleTheme()" title="Toggle Theme">🌓</button>
         </div>
-        <h1>🌍 Time Zone Converter</h1>
-        <p style="opacity:0.7;">Convert time between any two timezones instantly</p>
+        <div class="header-content">
+            <h1>🌍 Time Zone Converter</h1>
+            <p class="subtitle">Convert time between any two timezones instantly with precision</p>
+        </div>
     </header>
 
     <div class="container">
-        <div class="tool-card">
+        <!-- Converter Card -->
+        <div class="converter-card">
             <div class="converter-grid">
-                <div class="timezone-selector">
-                    <label>From Timezone:</label>
-                    <select id="fromTimezone">
-                        <option value="America/New_York">New York (EST/EDT)</option>
-                        <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
-                        <option value="Europe/London">London (GMT/BST)</option>
-                        <option value="Europe/Paris">Paris (CET/CEST)</option>
-                        <option value="Asia/Tokyo">Tokyo (JST)</option>
-                        <option value="Asia/Shanghai">Shanghai (CST)</option>
-                        <option value="Asia/Kolkata">Mumbai (IST)</option>
-                        <option value="Australia/Sydney">Sydney (AEST/AEDT)</option>
-                        <option value="America/Chicago">Chicago (CST/CDT)</option>
-                        <option value="America/Denver">Denver (MST/MDT)</option>
-                    </select>
-                    <label>Time:</label>
-                    <input type="datetime-local" id="fromTime">
+                <!-- From Timezone -->
+                <div class="timezone-panel">
+                    <div class="input-group">
+                        <label>From Timezone</label>
+                        <select id="fromTimezone">
+                            <option value="America/New_York">🇺🇸 New York (EST/EDT)</option>
+                            <option value="America/Los_Angeles">🇺🇸 Los Angeles (PST/PDT)</option>
+                            <option value="America/Chicago">🇺🇸 Chicago (CST/CDT)</option>
+                            <option value="America/Denver">🇺🇸 Denver (MST/MDT)</option>
+                            <option value="Europe/London">🇬🇧 London (GMT/BST)</option>
+                            <option value="Europe/Paris">🇫🇷 Paris (CET/CEST)</option>
+                            <option value="Europe/Berlin">🇩🇪 Berlin (CET/CEST)</option>
+                            <option value="Asia/Tokyo">🇯🇵 Tokyo (JST)</option>
+                            <option value="Asia/Shanghai">🇨🇳 Shanghai (CST)</option>
+                            <option value="Asia/Kolkata">🇮🇳 Mumbai (IST)</option>
+                            <option value="Asia/Dubai">🇦🇪 Dubai (GST)</option>
+                            <option value="Australia/Sydney">🇦🇺 Sydney (AEST/AEDT)</option>
+                            <option value="UTC">🌐 UTC</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Select Date & Time</label>
+                        <input type="datetime-local" id="fromTime">
+                    </div>
                 </div>
-                
-                <div class="arrow">⇄</div>
-                
-                <div class="timezone-selector">
-                    <label>To Timezone:</label>
-                    <select id="toTimezone">
-                        <option value="Europe/London">London (GMT/BST)</option>
-                        <option value="America/New_York" selected>New York (EST/EDT)</option>
-                        <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
-                        <option value="Europe/Paris">Paris (CET/CEST)</option>
-                        <option value="Asia/Tokyo">Tokyo (JST)</option>
-                        <option value="Asia/Shanghai">Shanghai (CST)</option>
-                        <option value="Asia/Kolkata">Mumbai (IST)</option>
-                        <option value="Australia/Sydney">Sydney (AEST/AEDT)</option>
-                        <option value="America/Chicago">Chicago (CST/CDT)</option>
-                        <option value="America/Denver">Denver (MST/MDT)</option>
-                    </select>
-                    <label>Converted Time:</label>
-                    <div class="result-display">
+
+                <!-- Swap Button -->
+                <button class="swap-btn" onclick="swapTimezones()">⇄</button>
+
+                <!-- To Timezone -->
+                <div class="timezone-panel">
+                    <div class="input-group">
+                        <label>To Timezone</label>
+                        <select id="toTimezone">
+                            <option value="America/New_York" selected>🇺🇸 New York (EST/EDT)</option>
+                            <option value="America/Los_Angeles">🇺🇸 Los Angeles (PST/PDT)</option>
+                            <option value="America/Chicago">🇺🇸 Chicago (CST/CDT)</option>
+                            <option value="America/Denver">🇺🇸 Denver (MST/MDT)</option>
+                            <option value="Europe/London">🇬🇧 London (GMT/BST)</option>
+                            <option value="Europe/Paris">🇫🇷 Paris (CET/CEST)</option>
+                            <option value="Europe/Berlin">🇩🇪 Berlin (CET/CEST)</option>
+                            <option value="Asia/Tokyo">🇯🇵 Tokyo (JST)</option>
+                            <option value="Asia/Shanghai">🇨🇳 Shanghai (CST)</option>
+                            <option value="Asia/Kolkata">🇮🇳 Mumbai (IST)</option>
+                            <option value="Asia/Dubai">🇦🇪 Dubai (GST)</option>
+                            <option value="Australia/Sydney">🇦🇺 Sydney (AEST/AEDT)</option>
+                            <option value="UTC">🌐 UTC</option>
+                        </select>
+                    </div>
+                    <div class="result-box">
                         <div class="result-time" id="convertedTime">--:--</div>
-                        <div class="result-date" id="convertedDate"></div>
+                        <div class="result-date" id="convertedDate">Select time to convert</div>
+                        <div class="result-timezone" id="convertedTimezone"></div>
                     </div>
                 </div>
             </div>
+
+            <div class="action-btns">
+                <button class="btn btn-primary" onclick="convertTime()">
+                    <span>🔄</span> Convert Now
+                </button>
+                <button class="btn btn-secondary" onclick="resetToCurrentTime()">
+                    <span>🕐</span> Reset to Current Time
+                </button>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <h2>⚡ Popular Time Conversions</h2>
+            <div class="links-grid">
+                <div class="link-category">
+                    <h3>🇮🇳 India (IST)</h3>
+                    <p>
+                        <a href="#" class="quick-link" onclick="loadTimezones('Asia/Kolkata', 'America/New_York'); return false;">IST → EST</a>
+                        <span class="link-separator">•</span>
+                        <a href="#" class="quick-link" onclick="loadTimezones('Asia/Kolkata', 'America/Los_Angeles'); return false;">IST → PST</a>
+                    </p>
+                    <p>
+                        <a href="#" class="quick-link" onclick="loadTimezones('Asia/Kolkata', 'Europe/London'); return false;">IST → GMT</a>
+                        <span class="link-separator">•</span>
+                        <a href="#" class="quick-link" onclick="loadTimezones('Asia/Kolkata', 'Asia/Tokyo'); return false;">IST → JST</a>
+                    </p>
+                </div>
+
+                <div class="link-category">
+                    <h3>🇺🇸 United States</h3>
+                    <p>
+                        <a href="#" class="quick-link" onclick="loadTimezones('America/New_York', 'America/Los_Angeles'); return false;">EST → PST</a>
+                        <span class="link-separator">•</span>
+                        <a href="#" class="quick-link" onclick="loadTimezones('America/New_York', 'America/Chicago'); return false;">EST → CST</a>
+                    </p>
+                    <p>
+                        <a href="#" class="quick-link" onclick="loadTimezones('America/New_York', 'Europe/London'); return false;">EST → GMT</a>
+                        <span class="link-separator">•</span>
+                        <a href="#" class="quick-link" onclick="loadTimezones('America/Los_Angeles', 'Asia/Tokyo'); return false;">PST → JST</a>
+                    </p>
+                </div>
+
+                <div class="link-category">
+                    <h3>🌍 Europe</h3>
+                    <p>
+                        <a href="#" class="quick-link" onclick="loadTimezones('Europe/London', 'Europe/Paris'); return false;">GMT → CET</a>
+                        <span class="link-separator">•</span>
+                        <a href="#" class="quick-link" onclick="loadTimezones('Europe/London', 'Asia/Dubai'); return false;">GMT → GST</a>
+                    </p>
+                    <p>
+                        <a href="#" class="quick-link" onclick="loadTimezones('Europe/Paris', 'America/New_York'); return false;">CET → EST</a>
+                        <span class="link-separator">•</span>
+                        <a href="#" class="quick-link" onclick="loadTimezones('Europe/Berlin', 'Asia/Tokyo'); return false;">CET → JST</a>
+                    </p>
+                </div>
+
+                <div class="link-category">
+                    <h3>🌏 Asia-Pacific</h3>
+                    <p>
+                        <a href="#" class="quick-link" onclick="loadTimezones('Asia/Tokyo', 'America/New_York'); return false;">JST → EST</a>
+                        <span class="link-separator">•</span>
+                        <a href="#" class="quick-link" onclick="loadTimezones('Asia/Shanghai', 'Europe/London'); return false;">CST → GMT</a>
+                    </p>
+                    <p>
+                        <a href="#" class="quick-link" onclick="loadTimezones('Australia/Sydney', 'America/Los_Angeles'); return false;">Sydney → PST</a>
+                        <span class="link-separator">•</span>
+                        <a href="#" class="quick-link" onclick="loadTimezones('Asia/Dubai', 'Asia/Kolkata'); return false;">Dubai → IST</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-section">
+            <h2>❓ Frequently Asked Questions</h2>
             
-            <div style="text-align:center; margin-top:30px;">
-                <button class="btn" onclick="convertTime()">🔄 Convert Now</button>
-                <button class="btn" onclick="swapTimezones()">⇄ Swap Timezones</button>
+            <div class="faq-item">
+                <div class="faq-question">Q: How accurate is this time zone converter?</div>
+                <p>Our converter uses the official IANA timezone database, ensuring 100% accuracy including automatic daylight saving time (DST) adjustments.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Does it account for daylight saving time?</div>
+                <p>Yes! The converter automatically accounts for DST changes based on the date you select, ensuring accurate conversions year-round.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I convert time for future or past dates?</div>
+                <p>Absolutely! Simply select any date and time using the date picker, and the converter will calculate the accurate timezone conversion for that specific moment.</p>
             </div>
         </div>
     </div>
 
-    <div class="seo-section">
-        <h2>🌍 Free Time Zone Converter - Convert Time Instantly</h2>
-        <p><strong>What is a time zone converter?</strong> A time zone converter is an essential tool for anyone working across different time zones. Our free online converter allows you to instantly convert time between any two timezones worldwide, making it perfect for scheduling international meetings, coordinating with global teams, planning travel, and managing remote work.</p>
-        
-        <h2>✨ Key Features</h2>
-        <p><strong>Instant Conversion:</strong> Convert time between 195+ countries and 250+ major cities instantly. No calculations needed - just select your timezones and get accurate results.</p>
-        <p><strong>Accurate Results:</strong> Our converter uses the official IANA timezone database, ensuring accuracy for all timezones including daylight saving time (DST) changes.</p>
-        <p><strong>Easy to Use:</strong> Simple interface - select source timezone, enter time, select destination timezone, and get instant results.</p>
-        <p><strong>Multiple Formats:</strong> View results in both 12-hour and 24-hour formats. See both the converted time and date.</p>
-        
-        <h2>📅 Common Use Cases</h2>
-        <p><strong>Business Meetings:</strong> Schedule meetings with international clients and colleagues. Know exactly when 9 AM in New York is in London, Tokyo, or Sydney.</p>
-        <p><strong>Travel Planning:</strong> Plan your trips by understanding time differences. Know what time it will be when you arrive at your destination.</p>
-        <p><strong>Remote Work:</strong> Coordinate with distributed teams across multiple timezones. Find the best meeting times for everyone.</p>
-        <p><strong>Event Planning:</strong> Plan global events, webinars, and conferences. Ensure participants know the correct local time.</p>
-        
-        <h2>❓ Frequently Asked Questions</h2>
-        <p><strong>Q: How accurate is the time zone converter?</strong><br>
-        A: Our converter uses the official IANA timezone database, the same database used by major operating systems. It automatically accounts for daylight saving time changes and historical timezone adjustments.</p>
-        
-        <p><strong>Q: Does the converter account for daylight saving time?</strong><br>
-        A: Yes! The converter automatically accounts for DST changes. When you convert time, it uses the correct offset for the selected date, including any DST adjustments.</p>
-        
-        <p><strong>Q: Can I convert time for past or future dates?</strong><br>
-        A: Yes, you can convert time for any date. The converter will use the correct timezone rules for that specific date, including historical DST changes.</p>
-        
-        <p><strong>Q: How many timezones are supported?</strong><br>
-        A: We support all timezones worldwide, including all 195+ countries and 250+ major cities. You can convert between any two timezones.</p>
-    </div>
-
-    <footer style="text-align:center; padding:30px 20px; background:var(--card-bg); border-top:2px solid var(--border); margin-top:50px;">
-        <p>Made with ❤️ | WorldTimeZoneLive 2026 | Free Time Zone Converter</p>
-        <p style="font-size:0.8em;margin-top:10px;">
-            <a href="index.html" style="color:var(--text);text-decoration:none;">🏠 World Clock</a> | 
-            <a href="alarm.html" style="color:var(--text);text-decoration:none;">⏰ Alarm & Timer</a> |
-            <a href="timezone-converter.html" style="color:var(--text);text-decoration:none;">🌍 Time Zone Converter</a>
+    <footer>
+        <p>Made with ❤️ by WorldTimeZoneLive | © 2026</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            <a href="index.html">🏠 World Clock</a> | 
+            <a href="alarm.html">⏰ Alarm & Timer</a> | 
+            <a href="timezone-converter.html">🌍 Time Zone Converter</a>
         </p>
     </footer>
 
     <script>
-        // Theme management
-        const themes = ['black', 'white', 'frozen', 'galaxy', 'raindrop', 'mute'];
-        const themeNames = ['Black', 'White', 'Frozen', 'Galaxy', 'Raindrop', 'Mute'];
-        let currentThemeIndex = 0;
-
-        // Theme cycling
-        document.getElementById('themeToggle').addEventListener('click', () => {
-            // Remove all theme classes
-            document.body.classList.remove(...themes.map(t => t + '-theme'));
-
-            // Move to next theme
-            currentThemeIndex = (currentThemeIndex + 1) % themes.length;
-
-            // Apply new theme
-            if (currentThemeIndex > 0) {
-                document.body.classList.add(themes[currentThemeIndex] + '-theme');
-            }
-
-            // Update theme name
-            document.getElementById('themeName').textContent = themeNames[currentThemeIndex];
-
-            // Recreate particles for new theme
-            createParticles();
-        });
-
-        function createParticles() {
-            const container = document.getElementById('particlesContainer');
-            if (!container) return;
-            container.innerHTML = '';
-            const particleCount = 25;
-
-            for (let i = 0; i < particleCount; i++) {
-                const p = document.createElement('div');
-                p.className = 'particle';
-
-                // Get current theme's particle symbol
-                const style = getComputedStyle(document.body);
-                const symbol = style.getPropertyValue('--particle-symbol').replace(/'/g, '').trim() || '❤';
-                p.textContent = symbol;
-
-                p.style.left = Math.random() * 100 + '%';
-                p.style.top = Math.random() * 100 + '%';
-                p.style.animationDelay = Math.random() * 5 + 's';
-                p.style.fontSize = (Math.random() * 30 + 15) + 'px';
-                container.appendChild(p);
-            }
-        }
-
-        // Set current time as default
-        const now = new Date();
-        const localDateTime = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
-        document.getElementById('fromTime').value = localDateTime;
-
-        function convertTime() {
-            const fromTz = document.getElementById('fromTimezone').value;
-            const toTz = document.getElementById('toTimezone').value;
-            const fromTime = document.getElementById('fromTime').value;
-            
-            if (!fromTime) {
-                alert('Please select a time to convert');
-                return;
-            }
-            
-            // Create date object in source timezone
-            const date = new Date(fromTime);
-            const fromDateStr = date.toLocaleString('en-US', { timeZone: fromTz, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
-            
-            // Get time components
-            const [datePart, timePart] = fromDateStr.split(', ');
-            const [month, day, year] = datePart.split('/');
-            const [hour, minute, second] = timePart.split(':');
-            
-            // Create date in target timezone
-            const targetDate = new Date(`${year}-${month}-${day}T${hour}:${minute}:${second}`);
-            const utcTime = targetDate.getTime() + (targetDate.getTimezoneOffset() * 60000);
-            const targetTime = new Date(utcTime + (getTimezoneOffset(toTz) - getTimezoneOffset(fromTz)) * 60000);
-            
-            // Display result
-            const timeStr = targetTime.toLocaleString('en-US', { timeZone: toTz, hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
-            const dateStr = targetTime.toLocaleString('en-US', { timeZone: toTz, weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-            
-            document.getElementById('convertedTime').textContent = timeStr;
-            document.getElementById('convertedDate').textContent = dateStr;
-        }
-
-        function getTimezoneOffset(tz) {
+        // Initialize with current time
+        function resetToCurrentTime() {
             const now = new Date();
-            const utc = new Date(now.toLocaleString('en-US', { timeZone: 'UTC' }));
-            const local = new Date(now.toLocaleString('en-US', { timeZone: tz }));
-            return (local - utc) / 60000;
+            const localDateTime = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
+            document.getElementById('fromTime').value = localDateTime;
+            convertTime();
         }
 
+        // Load timezone pairs from quick links
+        function loadTimezones(from, to) {
+            document.getElementById('fromTimezone').value = from;
+            document.getElementById('toTimezone').value = to;
+            convertTime();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Swap timezones
         function swapTimezones() {
             const fromTz = document.getElementById('fromTimezone').value;
             const toTz = document.getElementById('toTimezone').value;
@@ -611,17 +679,67 @@
             convertTime();
         }
 
+        // Convert time between timezones
+        function convertTime() {
+            const fromTz = document.getElementById('fromTimezone').value;
+            const toTz = document.getElementById('toTimezone').value;
+            const fromTime = document.getElementById('fromTime').value;
+            
+            if (!fromTime) {
+                document.getElementById('convertedTime').textContent = '--:--';
+                document.getElementById('convertedDate').textContent = 'Please select a date and time';
+                document.getElementById('convertedTimezone').textContent = '';
+                return;
+            }
+            
+            try {
+                // Parse the input time
+                const date = new Date(fromTime);
+                
+                // Convert to target timezone
+                const timeStr = date.toLocaleString('en-US', { 
+                    timeZone: toTz, 
+                    hour: '2-digit', 
+                    minute: '2-digit',
+                    hour12: true 
+                });
+                
+                const dateStr = date.toLocaleString('en-US', { 
+                    timeZone: toTz, 
+                    weekday: 'long', 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                });
+
+                // Get timezone abbreviation
+                const tzStr = date.toLocaleString('en-US', { 
+                    timeZone: toTz, 
+                    timeZoneName: 'short' 
+                }).split(' ').pop();
+                
+                document.getElementById('convertedTime').textContent = timeStr;
+                document.getElementById('convertedDate').textContent = dateStr;
+                document.getElementById('convertedTimezone').textContent = tzStr;
+            } catch (error) {
+                console.error('Conversion error:', error);
+                document.getElementById('convertedTime').textContent = 'Error';
+                document.getElementById('convertedDate').textContent = 'Invalid time or timezone';
+            }
+        }
+
+        // Theme toggle (placeholder for future implementation)
+        function toggleTheme() {
+            alert('Theme switching coming soon! 🎨');
+        }
+
         // Auto-convert on change
         document.getElementById('fromTime').addEventListener('change', convertTime);
         document.getElementById('fromTimezone').addEventListener('change', convertTime);
         document.getElementById('toTimezone').addEventListener('change', convertTime);
 
-        // Initial conversion
-        convertTime();
-        
-        // Initialize particles
-        createParticles();
+        // Initialize
+        resetToCurrentTime();
     </script>
 </body>
 </html>
-
