@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,15 +12,6 @@
     <meta name="keywords"
         content="world clock, time zones, live clock, international time, city time, timezone converter">
     <link rel="canonical" href="https://worldtimezonelive.com/">
-    
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WNLBF935');</script>
-    <!-- End Google Tag Manager -->
-    
     <style>
         * {
             margin: 0;
@@ -142,35 +134,6 @@
             color: rgba(79, 195, 247, 0.5);
         }
 
-        /* Mute Theme - Silent grays with mute icons */
-        body.mute-theme {
-            --bg-1: #1a1a1a;
-            --bg-2: #2d2d2d;
-            --bg-3: #3a3a3a;
-            --text: #e0e0e0;
-            --border: #888888;
-            --card-bg: rgba(136, 136, 136, 0.1);
-            --card-hover: rgba(136, 136, 136, 0.2);
-            --accent-color: rgba(136, 136, 136, 0.4);
-            --particle-symbol: '🔇';
-            --particle-color: rgba(200, 200, 200, 0.6);
-            --theme-name: 'Mute Theme';
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #3a3a3a 100%) !important;
-        }
-
-        body.mute-theme h1 {
-            text-shadow: 0 0 30px rgba(136, 136, 136, 0.5);
-        }
-
-        body.mute-theme .time-display {
-            text-shadow: 0 0 20px rgba(136, 136, 136, 0.4);
-        }
-
-        body.mute-theme .clock-card::before {
-            content: '🔇';
-            color: rgba(136, 136, 136, 0.5);
-        }
-
         body {
             font-family: 'Segoe UI', sans-serif;
             background: linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 50%, var(--bg-3) 100%);
@@ -211,11 +174,6 @@
         /* Raindrop theme drops fall */
         body.raindrop-theme .particle {
             animation: rainfall 8s infinite linear;
-        }
-
-        /* Mute theme icons fade */
-        body.mute-theme .particle {
-            animation: muteFade 12s infinite ease-in-out;
         }
 
         @keyframes float {
@@ -265,17 +223,6 @@
             100% {
                 transform: translateY(100vh);
                 opacity: 0.2;
-            }
-        }
-
-        @keyframes muteFade {
-            0%, 100% {
-                opacity: 0.3;
-                transform: scale(0.9) translateY(0);
-            }
-            50% {
-                opacity: 0.7;
-                transform: scale(1.1) translateY(-20px);
             }
         }
 
@@ -751,11 +698,6 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNLBF935"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
     <div class="particles-bg" id="particlesContainer"></div>
     
     <!-- Sidebar Navigation -->
@@ -793,9 +735,12 @@
                 <span class="sidebar-link-icon">🌅</span>
                 <span class="sidebar-link-text">Sunrise & Sunset</span>
             </a>
+            <a href="2026 Digital Produccts.html" class="sidebar-link">
+                <span class="sidebar-link-icon">📝</span>
+                <span class="sidebar-link-text">2026 Digital Products</span>
+</a>
         </div>
     </nav>
-
     <!-- Mobile Sidebar Toggle Button -->
     <button class="sidebar-toggle" id="sidebarToggle" style="display:none;">☰</button>
 
@@ -806,7 +751,7 @@
         <div class="controls">
             <button class="theme-toggle" id="themeToggle">� <span id="themeName">Black</span></button>
             <button class="format-toggle" id="formatToggle"><span id="formatText">12hr</span></button>
-            <button class="sound-toggle" id="soundToggle"><span id="soundIcon">🔇</span></button>
+            <button class="sound-toggle" id="soundToggle">🔇 <span id="soundIcon">🔇</span></button>
         </div>
     </header>
 
@@ -826,8 +771,8 @@
                 const cities = [{ name: 'Kabul', timezone: 'Asia/Kabul', country: 'Afghanistan', flag: '🇦🇫', blog: 'Afghanistan uses AFT (UTC+4:30). Unique half-hour offset timezone.', faq: 'Q: Does Afghanistan observe DST? A: No, AFT year-round.' }, { name: 'Tirana', timezone: 'Europe/Tirane', country: 'Albania', flag: '🇦🇱' }, { name: 'Algiers', timezone: 'Africa/Algiers', country: 'Algeria', flag: '🇩🇿' }, { name: 'Buenos Aires', timezone: 'America/Argentina/Buenos_Aires', country: 'Argentina', flag: '🇦🇷', blog: 'Buenos Aires uses ART (UTC-3). Major South American financial hub.', faq: 'Q: Does Buenos Aires observe DST? A: No, ART year-round since 2009.' }, { name: 'Sydney', timezone: 'Australia/Sydney', country: 'Australia', flag: '🇦🇺' }, { name: 'Melbourne', timezone: 'Australia/Melbourne', country: 'Australia', flag: '🇦🇺' }, { name: 'Brisbane', timezone: 'Australia/Brisbane', country: 'Australia', flag: '🇦🇺' }, { name: 'Perth', timezone: 'Australia/Perth', country: 'Australia', flag: '🇦🇺' }, { name: 'Vienna', timezone: 'Europe/Vienna', country: 'Austria', flag: '🇦🇹' }, { name: 'Dhaka', timezone: 'Asia/Dhaka', country: 'Bangladesh', flag: '🇧🇩' }, { name: 'Brussels', timezone: 'Europe/Brussels', country: 'Belgium', flag: '🇧🇪' }, { name: 'La Paz', timezone: 'America/La_Paz', country: 'Bolivia', flag: '🇧🇴' }, { name: 'Brasilia', timezone: 'America/Sao_Paulo', country: 'Brazil', flag: '🇧🇷' }, { name: 'São Paulo', timezone: 'America/Sao_Paulo', country: 'Brazil', flag: '🇧🇷' }, { name: 'Rio de Janeiro', timezone: 'America/Sao_Paulo', country: 'Brazil', flag: '🇧🇷' }, { name: 'Sofia', timezone: 'Europe/Sofia', country: 'Bulgaria', flag: '🇧🇬' }, { name: 'Phnom Penh', timezone: 'Asia/Phnom_Penh', country: 'Cambodia', flag: '🇰🇭' }, { name: 'Ottawa', timezone: 'America/Toronto', country: 'Canada', flag: '🇨🇦' }, { name: 'Toronto', timezone: 'America/Toronto', country: 'Canada', flag: '🇨🇦' }, { name: 'Vancouver', timezone: 'America/Vancouver', country: 'Canada', flag: '🇨🇦' }, { name: 'Montreal', timezone: 'America/Montreal', country: 'Canada', flag: '🇨🇦' }, { name: 'Calgary', timezone: 'America/Edmonton', country: 'Canada', flag: '🇨🇦' }, { name: 'Santiago', timezone: 'America/Santiago', country: 'Chile', flag: '🇨🇱' }, { name: 'Beijing', timezone: 'Asia/Shanghai', country: 'China', flag: '🇨🇳', blog: 'All China uses CST (UTC+8) despite spanning 5 geographic timezones.', faq: 'Q: Why one timezone? A: Political unity.' }, { name: 'Shanghai', timezone: 'Asia/Shanghai', country: 'China', flag: '🇨🇳' }, { name: 'Hong Kong', timezone: 'Asia/Hong_Kong', country: 'China', flag: '🇭🇰' }, { name: 'Bogotá', timezone: 'America/Bogota', country: 'Colombia', flag: '🇨🇴' }, { name: 'San José', timezone: 'America/Costa_Rica', country: 'Costa Rica', flag: '🇨🇷' }, { name: 'Zagreb', timezone: 'Europe/Zagreb', country: 'Croatia', flag: '🇭🇷' }, { name: 'Havana', timezone: 'America/Havana', country: 'Cuba', flag: '🇨🇺' }, { name: 'Nicosia', timezone: 'Asia/Nicosia', country: 'Cyprus', flag: '🇨🇾' }, { name: 'Prague', timezone: 'Europe/Prague', country: 'Czech Republic', flag: '🇨🇿' }, { name: 'Copenhagen', timezone: 'Europe/Copenhagen', country: 'Denmark', flag: '🇩🇰' }, { name: 'Santo Domingo', timezone: 'America/Santo_Domingo', country: 'Dominican Republic', flag: '🇩🇴' }, { name: 'Quito', timezone: 'America/Guayaquil', country: 'Ecuador', flag: '🇪🇨' }, { name: 'Cairo', timezone: 'Africa/Cairo', country: 'Egypt', flag: '🇪🇬', blog: 'Cairo uses EET (UTC+2). Largest Middle East city.', faq: 'Q: Cairo timezone? A: EET (UTC+2) year-round.' }, { name: 'Tallinn', timezone: 'Europe/Tallinn', country: 'Estonia', flag: '🇪🇪' }, { name: 'Addis Ababa', timezone: 'Africa/Addis_Ababa', country: 'Ethiopia', flag: '🇪🇹' }, { name: 'Helsinki', timezone: 'Europe/Helsinki', country: 'Finland', flag: '🇫🇮' }, { name: 'Paris', timezone: 'Europe/Paris', country: 'France', flag: '🇫🇷', blog: 'Paris uses CET/CEST. Major European financial center.', faq: 'Q: Paris timezone? A: CET (UTC+1) winter, CEST (UTC+2) summer.' }, { name: 'Berlin', timezone: 'Europe/Berlin', country: 'Germany', flag: '🇩🇪', blog: 'Berlin uses CET/CEST. Europe\'s largest economy.', faq: 'Q: Germany timezone? A: CET/CEST.' }, { name: 'Accra', timezone: 'Africa/Accra', country: 'Ghana', flag: '🇬🇭' }, { name: 'Athens', timezone: 'Europe/Athens', country: 'Greece', flag: '🇬🇷' }, { name: 'Guatemala City', timezone: 'America/Guatemala', country: 'Guatemala', flag: '🇬🇹' }, { name: 'Port-au-Prince', timezone: 'America/Port-au-Prince', country: 'Haiti', flag: '🇭🇹' }, { name: 'Budapest', timezone: 'Europe/Budapest', country: 'Hungary', flag: '🇭🇺' }, { name: 'Reykjavik', timezone: 'Atlantic/Reykjavik', country: 'Iceland', flag: '🇮🇸' }, { name: 'New Delhi', timezone: 'Asia/Kolkata', country: 'India', flag: '🇮🇳', blog: 'India uses IST (UTC+5:30) nationwide. Unique half-hour offset.', faq: 'Q: Why half-hour? A: Geographic/political reasons.' }, { name: 'Mumbai', timezone: 'Asia/Kolkata', country: 'India', flag: '🇮🇳' }, { name: 'Kolkata', timezone: 'Asia/Kolkata', country: 'India', flag: '🇮🇳' }, { name: 'Bangalore', timezone: 'Asia/Kolkata', country: 'India', flag: '🇮🇳' }, { name: 'Jakarta', timezone: 'Asia/Jakarta', country: 'Indonesia', flag: '🇮🇩' }, { name: 'Tehran', timezone: 'Asia/Tehran', country: 'Iran', flag: '🇮🇷' }, { name: 'Baghdad', timezone: 'Asia/Baghdad', country: 'Iraq', flag: '🇮🇶' }, { name: 'Dublin', timezone: 'Europe/Dublin', country: 'Ireland', flag: '🇮🇪' }, { name: 'Jerusalem', timezone: 'Asia/Jerusalem', country: 'Israel', flag: '🇮🇱' }, { name: 'Tel Aviv', timezone: 'Asia/Jerusalem', country: 'Israel', flag: '🇮🇱' }, { name: 'Rome', timezone: 'Europe/Rome', country: 'Italy', flag: '🇮🇹' }, { name: 'Kingston', timezone: 'America/Jamaica', country: 'Jamaica', flag: '🇯🇲' }, { name: 'Tokyo', timezone: 'Asia/Tokyo', country: 'Japan', flag: '🇯🇵', blog: 'Tokyo uses JST (UTC+9) without DST. World\'s 3rd largest economy.', faq: 'Q: Does Japan observe DST? A: No, JST year-round.' }, { name: 'Amman', timezone: 'Asia/Amman', country: 'Jordan', flag: '🇯🇴' }, { name: 'Astana', timezone: 'Asia/Almaty', country: 'Kazakhstan', flag: '🇰🇿' }, { name: 'Nairobi', timezone: 'Africa/Nairobi', country: 'Kenya', flag: '🇰🇪' }, { name: 'Kuwait City', timezone: 'Asia/Kuwait', country: 'Kuwait', flag: '🇰🇼' }, { name: 'Riga', timezone: 'Europe/Riga', country: 'Latvia', flag: '🇱🇻' }, { name: 'Beirut', timezone: 'Asia/Beirut', country: 'Lebanon', flag: '🇱🇧' }, { name: 'Vilnius', timezone: 'Europe/Vilnius', country: 'Lithuania', flag: '🇱🇹' }, { name: 'Kuala Lumpur', timezone: 'Asia/Kuala_Lumpur', country: 'Malaysia', flag: '🇲🇾' }, { name: 'Valletta', timezone: 'Europe/Malta', country: 'Malta', flag: '🇲🇹' }, { name: 'Mexico City', timezone: 'America/Mexico_City', country: 'Mexico', flag: '🇲🇽' }, { name: 'Monaco', timezone: 'Europe/Monaco', country: 'Monaco', flag: '🇲🇨' }, { name: 'Ulaanbaatar', timezone: 'Asia/Ulaanbaatar', country: 'Mongolia', flag: '🇲🇳' }, { name: 'Rabat', timezone: 'Africa/Casablanca', country: 'Morocco', flag: '🇲🇦' }, { name: 'Casablanca', timezone: 'Africa/Casablanca', country: 'Morocco', flag: '🇲🇦' }, { name: 'Yangon', timezone: 'Asia/Yangon', country: 'Myanmar', flag: '🇲🇲' }, { name: 'Kathmandu', timezone: 'Asia/Kathmandu', country: 'Nepal', flag: '🇳🇵', blog: 'Nepal uses NPT (UTC+5:45). Unique 45-minute offset.', faq: 'Q: Why 45-minute offset? A: Rare timezone.' }, { name: 'Amsterdam', timezone: 'Europe/Amsterdam', country: 'Netherlands', flag: '🇳🇱' }, { name: 'Wellington', timezone: 'Pacific/Auckland', country: 'New Zealand', flag: '🇳🇿' }, { name: 'Auckland', timezone: 'Pacific/Auckland', country: 'New Zealand', flag: '🇳🇿' }, { name: 'Managua', timezone: 'America/Managua', country: 'Nicaragua', flag: '🇳🇮' }, { name: 'Abuja', timezone: 'Africa/Lagos', country: 'Nigeria', flag: '🇳🇬' }, { name: 'Lagos', timezone: 'Africa/Lagos', country: 'Nigeria', flag: '🇳🇬' }, { name: 'Pyongyang', timezone: 'Asia/Pyongyang', country: 'North Korea', flag: '🇰🇵' }, { name: 'Oslo', timezone: 'Europe/Oslo', country: 'Norway', flag: '🇳🇴' }, { name: 'Muscat', timezone: 'Asia/Muscat', country: 'Oman', flag: '🇴🇲' }, { name: 'Islamabad', timezone: 'Asia/Karachi', country: 'Pakistan', flag: '🇵🇰' }, { name: 'Karachi', timezone: 'Asia/Karachi', country: 'Pakistan', flag: '🇵🇰' }, { name: 'Panama City', timezone: 'America/Panama', country: 'Panama', flag: '🇵🇦' }, { name: 'Lima', timezone: 'America/Lima', country: 'Peru', flag: '🇵🇪' }, { name: 'Manila', timezone: 'Asia/Manila', country: 'Philippines', flag: '🇵🇭' }, { name: 'Warsaw', timezone: 'Europe/Warsaw', country: 'Poland', flag: '🇵🇱' }, { name: 'Lisbon', timezone: 'Europe/Lisbon', country: 'Portugal', flag: '🇵🇹' }, { name: 'Doha', timezone: 'Asia/Qatar', country: 'Qatar', flag: '🇶🇦' }, { name: 'Bucharest', timezone: 'Europe/Bucharest', country: 'Romania', flag: '🇷🇴' }, { name: 'Moscow', timezone: 'Europe/Moscow', country: 'Russia', flag: '🇷🇺', blog: 'Russia spans 11 time zones. Moscow uses MSK (UTC+3).', faq: 'Q: How many timezones? A: Eleven zones.' }, { name: 'Kigali', timezone: 'Africa/Kigali', country: 'Rwanda', flag: '🇷🇼' }, { name: 'Riyadh', timezone: 'Asia/Riyadh', country: 'Saudi Arabia', flag: '🇸🇦' }, { name: 'Dakar', timezone: 'Africa/Dakar', country: 'Senegal', flag: '🇸🇳' }, { name: 'Belgrade', timezone: 'Europe/Belgrade', country: 'Serbia', flag: '🇷🇸' }, { name: 'Singapore', timezone: 'Asia/Singapore', country: 'Singapore', flag: '🇸🇬', blog: 'Singapore uses SGT (UTC+8). Major Asian financial center.', faq: 'Q: Singapore timezone? A: SGT (UTC+8) without DST.' }, { name: 'Bratislava', timezone: 'Europe/Bratislava', country: 'Slovakia', flag: '🇸🇰' }, { name: 'Ljubljana', timezone: 'Europe/Ljubljana', country: 'Slovenia', flag: '🇸🇮' }, { name: 'Johannesburg', timezone: 'Africa/Johannesburg', country: 'South Africa', flag: '🇿🇦' }, { name: 'Seoul', timezone: 'Asia/Seoul', country: 'South Korea', flag: '🇰🇷' }, { name: 'Madrid', timezone: 'Europe/Madrid', country: 'Spain', flag: '🇪🇸' }, { name: 'Colombo', timezone: 'Asia/Colombo', country: 'Sri Lanka', flag: '🇱🇰' }, { name: 'Stockholm', timezone: 'Europe/Stockholm', country: 'Sweden', flag: '🇸🇪' }, { name: 'Zurich', timezone: 'Europe/Zurich', country: 'Switzerland', flag: '🇨🇭' }, { name: 'Damascus', timezone: 'Asia/Damascus', country: 'Syria', flag: '🇸🇾' }, { name: 'Taipei', timezone: 'Asia/Taipei', country: 'Taiwan', flag: '🇹🇼' }, { name: 'Bangkok', timezone: 'Asia/Bangkok', country: 'Thailand', flag: '🇹🇭' }, { name: 'Tunis', timezone: 'Africa/Tunis', country: 'Tunisia', flag: '🇹🇳' }, { name: 'Istanbul', timezone: 'Europe/Istanbul', country: 'Turkey', flag: '🇹🇷' }, { name: 'Kampala', timezone: 'Africa/Kampala', country: 'Uganda', flag: '🇺🇬' }, { name: 'Kiev', timezone: 'Europe/Kiev', country: 'Ukraine', flag: '🇺🇦' }, { name: 'Dubai', timezone: 'Asia/Dubai', country: 'UAE', flag: '🇦🇪', blog: 'UAE uses GST (UTC+4). Major Middle Eastern business hub.', faq: 'Q: UAE timezone? A: GST (UTC+4) year-round.' }, { name: 'Abu Dhabi', timezone: 'Asia/Dubai', country: 'UAE', flag: '🇦🇪' }, { name: 'London', timezone: 'Europe/London', country: 'UK', flag: '🇬🇧', blog: 'London uses GMT/BST (UTC+0/+1). Global financial center.', faq: 'Q: London time? A: GMT winter, BST summer.' }, { name: 'New York', timezone: 'America/New_York', country: 'USA', flag: '🇺🇸', blog: 'New York uses EST/EDT (UTC-5/-4). World\'s largest financial center.', faq: 'Q: NYC timezone? A: EST winter, EDT summer.' }, { name: 'Los Angeles', timezone: 'America/Los_Angeles', country: 'USA', flag: '🇺🇸' }, { name: 'Chicago', timezone: 'America/Chicago', country: 'USA', flag: '🇺🇸' }, { name: 'Houston', timezone: 'America/Chicago', country: 'USA', flag: '🇺🇸' }, { name: 'Washington DC', timezone: 'America/New_York', country: 'USA', flag: '🇺🇸' }, { name: 'Montevideo', timezone: 'America/Montevideo', country: 'Uruguay', flag: '🇺🇾' }, { name: 'Tashkent', timezone: 'Asia/Tashkent', country: 'Uzbekistan', flag: '🇺🇿' }, { name: 'Caracas', timezone: 'America/Caracas', country: 'Venezuela', flag: '🇻🇪' }, { name: 'Ho Chi Minh City', timezone: 'Asia/Ho_Chi_Minh', country: 'Vietnam', flag: '🇻🇳' }, { name: 'Hanoi', timezone: 'Asia/Ho_Chi_Minh', country: 'Vietnam', flag: '🇻🇳' }, { name: 'Sanaa', timezone: 'Asia/Aden', country: 'Yemen', flag: '🇾🇪' }, { name: 'Lusaka', timezone: 'Africa/Lusaka', country: 'Zambia', flag: '🇿🇲' }, { name: 'Harare', timezone: 'Africa/Harare', country: 'Zimbabwe', flag: '🇿🇼' }];
 
                 // Theme management
-                const themes = ['black', 'white', 'frozen', 'galaxy', 'raindrop', 'mute'];
-                const themeNames = ['Black', 'White', 'Frozen', 'Galaxy', 'Raindrop', 'Mute'];
+                const themes = ['black', 'white', 'frozen', 'galaxy', 'raindrop'];
+                const themeNames = ['Black', 'White', 'Frozen', 'Galaxy', 'Raindrop'];
                 let currentThemeIndex = 0;
                 let soundEnabled = false, audioContext = null, is24HourFormat = false;
 
